@@ -35,3 +35,28 @@
 
 // =============================================
 // =============================================
+
+// // Nullish coalescing operator
+
+// let name;
+
+// let age = 23;
+
+// console.log(name ?? age);
+
+// console.log(age ?? name);
+
+//!!!!! //cause the name does not have any value,this will return the age
+
+// let empty = null;
+
+// let nothing;
+
+// console.log(empty ?? nothing);
+
+// console.log(nothing ?? empty);
+
+//!!!!!! //if we dont have any values the result will be the secound variable
+
+// =============================================
+// =============================================
