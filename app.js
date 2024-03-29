@@ -60,3 +60,16 @@
 
 // =============================================
 // =============================================
+
+// //Ternary oparator
+
+// const x = 5;
+// const y = 6;
+// console.log(
+//   x < y ? `y(${y}) is bigger then x(${x})` : `x(${x}) is bigger then y(${y})`
+// );
+
+//!!! //We can say this is a smaller virsion of -if- with less code & best for 1 line statements
+
+// =============================================
+// =============================================
