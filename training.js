@@ -34,29 +34,3 @@
 
 // =============================================
 // =============================================
-
-// //------------------------------------------------     split,replace,concat,trim     ------------------------------------------------
-// const info = `Hi world my name is aref keyhani pirdehi`;
-// const age = "    im 23 years old";
-// console.log(info.split(" "));
-// console.log(info.replace("world", "my friends"));
-// console.log(info.concat(age));
-// console.log(age);
-// console.log(age.trim());
-
-// =============================================
-// =============================================
-
-// //------------------------------------------------     slice,substring     ------------------------------------------------
-
-// const info = `Hi world my name is aref keyhani pirdehi and im 23 years old`;
-// const myAge = info.slice(-15);
-// const hello = info.slice(0, 2);
-
-// console.log(myAge);
-// console.log(hello);
-
-//substring is the same as slice but we cant use any negetives like -x so i recommend to use slice only
-
-// =============================================
-// =============================================
