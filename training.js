@@ -34,3 +34,15 @@
 
 // =============================================
 // =============================================
+
+// //------------------------------------------------     split,replace,concat,trim     ------------------------------------------------
+// const info = `Hi world my name is aref keyhani pirdehi`;
+// const age = "    im 23 years old";
+// console.log(info.split(" "));
+// console.log(info.replace("world", "my friends"));
+// console.log(info.concat(age));
+// console.log(age);
+// console.log(age.trim());
+
+// =============================================
+// =============================================
