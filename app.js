@@ -119,3 +119,18 @@
 
 // =============================================
 // =============================================
+
+// //------------------------------------------------     Spread Operator     ------------------------------------------------
+
+// //    spread operator is something like concat :
+// //    use 3 dots befor the key and you can call it
+
+// const info = ["aref", "keyhani", 23];
+// const anotherInfo = ["ali", "sasani", 20];
+
+// const allInfo = [...info, ...anotherInfo];
+
+// console.log(allInfo);
+
+// =============================================
+// =============================================
