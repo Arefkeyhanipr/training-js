@@ -183,15 +183,49 @@
 // =============================================
 // =============================================
 
-const data = {
-  name: "aref",
-  lastName: "keyhani pirdehi",
-  "a g e": 23,
-  skills: ["basketball", "programming", "cooking"],
-};
+// const data = {
+//   name: "aref",
+//   lastName: "keyhani pirdehi",
+//   "a g e": 23,
+//   skills: ["basketball", "programming", "cooking"],
+// };
 
-const keys = Object.keys(data);
-const values = Object.values(data);
+// const keys = Object.keys(data);
+// const values = Object.values(data);
 
-console.log(keys);
-console.log(values);
+// console.log(keys);
+// console.log(values);
+
+// =============================================
+// =============================================
+
+// //------------------------------------------------     Object Destruring     ------------------------------------------------
+
+// const data = {
+//   name: "aref",
+//   lastName: "keyhani pirdehi",
+//   age: 23,
+//   address: {
+//     contry: "iran",
+//     more: {
+//       city: "tehran",
+//     },
+//   },
+// };
+
+// const {
+//   name,
+//   lastName,
+//   age,
+//   address,
+//   address: {
+//     more: { city },
+//   },
+// } = data;
+
+// console.log(address);
+// console.log(city);
+// console.log(lastName);
+
+// =============================================
+// =============================================
