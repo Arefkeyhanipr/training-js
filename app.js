@@ -182,3 +182,16 @@
 
 // =============================================
 // =============================================
+
+const data = {
+  name: "aref",
+  lastName: "keyhani pirdehi",
+  "a g e": 23,
+  skills: ["basketball", "programming", "cooking"],
+};
+
+const keys = Object.keys(data);
+const values = Object.values(data);
+
+console.log(keys);
+console.log(values);
