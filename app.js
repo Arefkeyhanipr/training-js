@@ -285,3 +285,13 @@
 
 // =============================================
 // =============================================
+
+//------------------------   for of loop   ------------------------
+
+// this look is specifically for array
+
+// let statesOfUsa = ["LA", "CA", "NY"];
+
+// for (const i of statesOfUsa) {
+//   console.log(`the state of ${i}`);
+// }
