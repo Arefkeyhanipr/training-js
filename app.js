@@ -151,12 +151,14 @@
 
 // =============================================
 // =============================================
+// const something = "fav";
 
 // const data = {
 //   name: "aref",
 //   lastName: "keyhani pirdehi",
 //   "a g e": 23,
 //   skills: ["basketball", "programming", "cooking"],
+//   [something]: `my favoritethings to do`,
 // };
 
 // const key = "skills";
@@ -164,6 +166,6 @@
 // console.log(data.name);
 // console.log(data["a g e"]);
 // console.log(data[key]);
-
+// console.log(data);
 // =============================================
 // =============================================
