@@ -250,3 +250,19 @@
 
 // =============================================
 // =============================================
+
+//------------------------   Switch case   ------------------------
+// const name = "aref";
+// switch (name) {
+//   case "aref":
+//     console.log(`Hello Aref,Welcome`);
+//     break;
+//   case "mohammad":
+//     console.log(`Hello Mohammad,Welcome`);
+//   default:
+//     console.log(`Hello there,Welcome`);
+//     break;
+// }
+
+// =============================================
+// =============================================
