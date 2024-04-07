@@ -288,10 +288,30 @@
 
 //------------------------   for of loop   ------------------------
 
-// this look is specifically for array
+// this loop is specifically for array
 
 // let statesOfUsa = ["LA", "CA", "NY"];
 
 // for (const i of statesOfUsa) {
 //   console.log(`the state of ${i}`);
 // }
+
+// =============================================
+// =============================================
+
+//------------------------   for in loop   ------------------------
+
+// this loop is specifically for Objects
+
+// const obj = {
+//   name: "aref",
+//   lastName: "Keyhani pirdehi",
+//   age: 23,
+// };
+
+// for (const i in obj) {
+//   console.log(obj[i]);
+// }
+
+// =============================================
+// =============================================
