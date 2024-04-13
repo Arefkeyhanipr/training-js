@@ -331,16 +331,51 @@
 //------------------------  Do while loop   ------------------------
 //the differences between do while and while is that do while will run the code one time for sure no matter what
 
-let i = 20;
+// let i = 20;
 
-do {
-  console.log(`i =${i}`);
-  i--;
-} while (i >= 0);
+// do {
+//   console.log(`i =${i}`);
+//   i--;
+// } while (i >= 0);
 
-let a = 10;
+// let a = 10;
 
-do {
-  console.log(a);
-  i++;
-} while (a > 20);
+// do {
+//   console.log(a);
+//   i++;
+// } while (a > 20);
+
+// =============================================
+// =============================================
+
+//------------------------  Break and continue   ------------------------
+
+// //Break will stop the loop
+// let i = 1;
+
+// while (i <= 20) {
+//   if (i == 10) {
+//     break;
+//   }
+//   console.log(`i= ${i}`);
+//   i++;
+// }
+
+// const array = [1, 2, 3, "A", 4, 5, 6];
+
+// for (z of array) {
+//   if (typeof z !== "number") {
+//     break;
+//   }
+//   console.log(`number in array is ${z}`);
+// }
+
+// //continue will jump to the next one
+// //
+// for (i of array) {
+//   if (typeof i !== "number") {
+//     console.log(`Number not found`);
+//     continue;
+//   }
+//   console.log(`this are the numbers in array ${i}`);
+// }
