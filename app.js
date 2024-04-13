@@ -318,9 +318,29 @@
 
 //------------------------   while loop   ------------------------
 
-let i = 1;
+// let i = 1;
 
-while (i <= 20) {
-  console.log(i);
+// while (i <= 20) {
+//   console.log(i);
+//   i++;
+// }
+
+// =============================================
+// =============================================
+
+//------------------------  Do while loop   ------------------------
+//the differences between do while and while is that do while will run the code one time for sure no matter what
+
+let i = 20;
+
+do {
+  console.log(`i =${i}`);
+  i--;
+} while (i >= 0);
+
+let a = 10;
+
+do {
+  console.log(a);
   i++;
-}
+} while (a > 20);
