@@ -434,3 +434,47 @@
 // //as you see when we add the return to our code, we can get the log of the result out side of it and use it
 // //*************** warning ***************
 // // if you write any codes after the return in function it will not be avaible and it wont run
+
+// =============================================
+// =============================================
+
+//------------------------  Function Declaration and function Expression   ------------------------
+
+// //we have two kinds of functions here that are:
+
+// //Function Declaration
+
+// function sayMyName(name) {
+//   console.log(`Your name is ${name} user number one`);
+// }
+
+// sayMyName("Aref");
+
+// //function Expression
+
+// const sayMyName2 = function (name) {
+//   console.log(`your name is ${name} user number two`);
+// };
+
+// sayMyName2(`Kasra`);
+
+// // so the difference between this two kind of function is about the hoisting
+// //in the Function Declaration we can call the function befor the function
+// //but in the function Expression we cant call the function befor of it
+// //like the example below-->
+// sayMyName3("mohammad");
+
+// function sayMyName3(name) {
+//   console.log(`Your name is ${name} user number three`);
+// }
+
+// //sayMyName4 gives an error that says "Cannot access 'sayMyName4' before initialization"
+// sayMyName4(`Kasra`);
+
+// const sayMyName4 = function (name) {
+//   console.log(`your name is ${name} user number four`);
+// };
+
+// //as you can see there is an error for the function Expression
+// //cause you have to call the function after it not befor it
+// //or else it wont work for function expression
