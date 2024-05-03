@@ -559,3 +559,47 @@
 // //*************** warning ***************
 // //if your using the one line arrow function you can just have one line and no more
 // //or else you need to open the bracket like the regular function
+
+// =============================================
+// =============================================
+
+//------------------------  Callback function   ------------------------
+
+//##########################################################  important  ##########################################################
+
+// //callback function is a function when you use another function for the parameter
+// //lets say we have two functions,function number one and function number two
+// //when i set the function number two to the parameter of function number one thats called callback function just like codes below-->
+
+// const showMessage = (text) => console.log(`the result is ${text}`);
+
+// function sum(num1, num2, callBack) {
+//   const summation = num1 + num2;
+//   const result = summation ** 2;
+//   callBack(result);
+// }
+
+// sum(1, 2, showMessage);
+
+// //here we set the showmessage function to the parameter named callback
+// //lets get this more simple for you:
+
+// const showMeSomething = (finalNum) =>
+//   console.log(`The final result of your plus is ${finalNum}`);
+
+// function sum2(num1, num2, callBack) {
+//   const plus = num1 + num2;
+//   callBack(plus);
+// }
+
+// sum2(22, 11, showMeSomething);
+
+// //at first the 22 and 11 will be 33 at line 588
+// //then it will go to the callback and send to the showMeSomething function and 33 will set to the finalNum
+// //and the result will be a text with --> The final result of your plus is 33
+
+// //the reason why 33 goes to the showMeSomething is that we set the callBack to showMeSomething when we are calling the fucntion in sum2()
+// //as you can see after the 22 and 11 we have showMeSomething in the sum2()
+// // and in the parameters of sum2 we have num1,num2 and in third parameter we have callBack so the callBack and showMeSomething are set to eachother
+
+// //the plus is equal to finalNum
