@@ -379,3 +379,31 @@
 //   }
 //   console.log(`this are the numbers in array ${i}`);
 // }
+
+// =============================================
+// =============================================
+
+// //------------------------------------------------
+
+//------------------------  Function   ------------------------
+
+// //code bellow shows the text hello world im a function
+// function showMessage() {
+//   console.log(`Hello world im a function`);
+// }
+
+// showMessage();
+
+// //code below will be 26,if we change the number of 4 to something else the result will change
+// function plus(number) {
+//   const result = number + 22;
+//   console.log(result);
+// }
+// plus(4);
+// //the code below shows us that we can use even more then one parameter in a single function
+// function duplicate(num1, num2) {
+//   const result = num1 * num2;
+//   console.log(result);
+// }
+
+// duplicate(4, 5);
