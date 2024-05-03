@@ -478,3 +478,43 @@
 // //as you can see there is an error for the function Expression
 // //cause you have to call the function after it not befor it
 // //or else it wont work for function expression
+
+// =============================================
+// =============================================
+
+//------------------------  Anonymous Function & IIFE function   ------------------------
+
+//-------Anonymous Function
+
+// //when we write a function with no name thats Anonymous Function
+
+// // function(){
+
+// // }
+
+// // a simple example for it is function expression
+// //if you look at function expression we are not giving the name to the function in that place
+
+// // const something = function (any) {};
+
+// //first we name it,and then make the function with noname cause it already has a name
+
+// //-------IIFE function
+
+// // IIFE ==> Immediately Invoked Function Expression
+
+// //as the name tells us it means the function will immediately start runing itself
+
+// //how do we make this? we just make a function and place it in a parentheses and in the end we will add an empry parentheses
+// //it will immediately run and doesnt need to be called
+
+// (function () {
+//   console.log(`I am IIFE Function`);
+// })();
+
+// //so it has 3 parts
+// //first is the parentheses
+// //secound the function in the parentheses
+// //and third is the empty parentheses so it calls itself
+
+// //********** a IIFE function is a Anonymous function and we cant name it **********
