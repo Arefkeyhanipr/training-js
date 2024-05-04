@@ -612,9 +612,35 @@
 // const numbers = [1, 3, 5, 7, 9];
 
 // const newNumbers = [];
+
 // //we can do stuff to each of the values of the array like the code below-->
+
 // numbers.forEach((i) => {
 //   let powerOfI = i ** 2;
 //   newNumbers.push(powerOfI);
 // });
+// console.log(newNumbers);
+
+// =============================================
+// =============================================
+
+//------------------------  map   ------------------------
+
+//map is similer to the foeEach, but we can return the items and make changes easly,lets see
+
+// const numbers = [1, 3, 5, 7, 9];
+
+// const newNumbers = numbers.map((number) => {
+//   return number * 3;
+// });
+
+// console.log(newNumbers);
+
+//as you can see we can give the information that we want to a new array without making a new array,with just using map and returning what we want
+
+//or we can write it like this in only oneline
+
+// const numbers = [1, 3, 5, 7, 9];
+
+// const newNumbers = numbers.map((number) => number * 3);
 // console.log(newNumbers);
