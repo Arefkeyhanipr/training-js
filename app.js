@@ -603,3 +603,18 @@
 // // and in the parameters of sum2 we have num1,num2 and in third parameter we have callBack so the callBack and showMeSomething are set to eachother
 
 // //the plus is equal to finalNum
+
+// =============================================
+// =============================================
+
+//------------------------  forEach   ------------------------
+
+// const numbers = [1, 3, 5, 7, 9];
+
+// const newNumbers = [];
+// //we can do stuff to each of the values of the array like the code below-->
+// numbers.forEach((i) => {
+//   let powerOfI = i ** 2;
+//   newNumbers.push(powerOfI);
+// });
+// console.log(newNumbers);
