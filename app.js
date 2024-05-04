@@ -682,3 +682,16 @@
 //     result3 + 1
 //   } part of the array`
 // );
+
+// =============================================
+// =============================================
+
+//------------------------  filter   ------------------------
+
+//the difference between find and filter is that filter will find everything that you want and wont stop till the end of array for searching
+//like the code below-->
+
+// const numbers = [2, 4, 6, 8, 10, 6];
+
+// const result = numbers.filter((number) => number === 6);
+// console.log(result);
