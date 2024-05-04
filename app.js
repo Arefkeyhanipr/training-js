@@ -644,3 +644,41 @@
 
 // const newNumbers = numbers.map((number) => number * 3);
 // console.log(newNumbers);
+
+// =============================================
+// =============================================
+
+//------------------------  find,findIndex   ------------------------
+
+//find is a method to see if what we want is inclueded in the array or not
+//the fact is find will give us the number only one time,like if we are looking for 5 or the text "hello"
+//and we have more then 1 5 or hello the find will just gives us the first 5 and the first hello it reaches in the array
+
+// const numbers = [2, 4, 6, 8, 10, 6];
+
+// const result = numbers.find((number) => {
+//   console.log(number);
+//   const isEqual = number === 6;
+//   console.log(isEqual);
+//   return isEqual;
+// });
+
+// console.log(`Result ${result} is in the array`);
+
+// // as you can see the loop will stop at 6 and wont read number 8 and 10 and the another 6
+// //we can write it in another and better way
+
+// const result2 = numbers.find((number) => number === 6);
+
+// console.log(`Result ${result2} is in the array`);
+// //
+// //
+// //if you want to find the index of what your looking for its just like find but we will use the findIndex loop like code below -->
+
+// const result3 = numbers.findIndex((number) => number === 6);
+
+// console.log(
+//   `index of what your looking for is ${result3} it means its siting on the ${
+//     result3 + 1
+//   } part of the array`
+// );
