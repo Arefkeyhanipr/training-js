@@ -604,8 +604,12 @@
 
 // //the plus is equal to finalNum
 
-// =============================================
-// =============================================
+// =======================================================================================================================================
+// =======================================================================================================================================
+//
+//
+//
+// //------------------------------------------------   loops and functions     ------------------------------------------------
 
 //------------------------  forEach   ------------------------
 
@@ -695,3 +699,34 @@
 
 // const result = numbers.filter((number) => number === 6);
 // console.log(result);
+
+// =============================================
+// =============================================
+
+//------------------------  Reduce   ------------------------
+
+//if we want to add the numbers together we can use the reduce
+
+const numbers = [2, 4, 6, 8, 10, 6];
+
+const result = numbers.reduce((accumulator, currentValue) => {
+  const result = accumulator + currentValue;
+  return result;
+}, 0);
+
+console.log(result);
+
+//or we can write it like this
+
+const result2 = numbers.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  0
+);
+
+console.log(result2);
+
+//the loop that we had goes like this
+//loop 1 -> acc=0 , cur=2  --> 2
+//loop 2 -> acc=2 , cur=4  --> 6
+//loop 3 -> acc=6 , cur=6  --> 12
+//and goes on...
