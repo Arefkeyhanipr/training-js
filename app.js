@@ -774,3 +774,29 @@
 // const result4 = data4.some((item) => typeof item === "boolean");
 
 // console.log(result4);
+
+// =============================================
+// =============================================
+
+//------------------------  the word - this -   ------------------------
+
+//we can say - this - selects the place that we are using it or better to say its showing us the parrent
+
+// console.log(this);
+
+// //like the code below - this - will show myData
+// const myData = {
+//   age: 23,
+//   name: "Aref",
+//   showMsg: function () {
+//     console.log(this);
+//   },
+// };
+
+// myData.showMsg();
+
+// //the reason that in this code below we again refer to the window is that abc right now is in global
+// //and again we are using this in a global object so it will refer to all of the window
+
+// const abc = myData.showMsg;
+// abc();
