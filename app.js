@@ -707,26 +707,70 @@
 
 //if we want to add the numbers together we can use the reduce
 
-const numbers = [2, 4, 6, 8, 10, 6];
+// const numbers = [2, 4, 6, 8, 10, 6];
 
-const result = numbers.reduce((accumulator, currentValue) => {
-  const result = accumulator + currentValue;
-  return result;
-}, 0);
+// const result = numbers.reduce((accumulator, currentValue) => {
+//   const result = accumulator + currentValue;
+//   return result;
+// }, 0);
 
-console.log(result);
+// console.log(result);
 
-//or we can write it like this
+// //or we can write it like this
 
-const result2 = numbers.reduce(
-  (accumulator, currentValue) => accumulator + currentValue,
-  0
-);
+// const result2 = numbers.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+//   0
+// );
 
-console.log(result2);
+// console.log(result2);
 
-//the loop that we had goes like this
-//loop 1 -> acc=0 , cur=2  --> 2
-//loop 2 -> acc=2 , cur=4  --> 6
-//loop 3 -> acc=6 , cur=6  --> 12
-//and goes on...
+// //the loop that we had goes like this
+// //loop 1 -> acc=0 , cur=2  --> 2
+// //loop 2 -> acc=2 , cur=4  --> 6
+// //loop 3 -> acc=6 , cur=6  --> 12
+// //and goes on...
+
+// =============================================
+// =============================================
+
+//------------------------  Every & Some   ------------------------
+
+//if we want to check something or everything in an array we can use every and some
+//lets get to it
+
+//so in the codes below we are asking the function and the every loop that are all items in the array number or not
+//the answer that every or some gives us is only true or false
+
+// const data = [1, 2, 3, 4, 5];
+
+// const result = data.every((item) => {
+//   const isTrue = typeof item === "number";
+//   return isTrue;
+// });
+
+// console.log(result);
+
+// //the code below will be false cause we are asking if EVERY item is number,and hi is not a number
+// const data2 = [1, 2, 3, 4, 5, "hi"];
+
+// const result2 = data2.every((item) => typeof item === "number");
+
+// console.log(result2);
+
+// //some in the other hand is just looking for 1 reason to say its true
+// //so when we are asking the some about the string actually we are asking is there any strings in the array?
+
+// const data3 = [1, 2, 3, 4, 5, "hi"];
+
+// const result3 = data3.some((item) => typeof item === "string");
+
+// console.log(result3);
+
+// //a false example for -some- in code below
+
+// const data4 = [1, 2, 3, 4, 5, "hi"];
+
+// const result4 = data4.some((item) => typeof item === "boolean");
+
+// console.log(result4);
