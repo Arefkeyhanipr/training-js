@@ -840,3 +840,31 @@
 // //the diffrence between call and apply is if you want to set a parameter value you need to keep it in array like code below
 // const data2 = { name: "Reza" };
 // sayMyName.apply(data, [27, "sasani"]);
+
+// =============================================
+// =============================================
+
+//------------------------  Setter,Getter   ------------------------
+//we use setter and getter to not use so many codes,like if we want some people in our site and we want thair names
+//we dont need to write their names every time and a const name=ali and const last name mohammadi
+//we can use setter and getter and write it one time and then just give the names to the function
+//it will make our code clean and way easier
+const data = {
+  firstName: "Aref",
+  lastName: "keyhani",
+  get fullName() {
+    return `${data.firstName} ${data.lastName}`;
+  },
+  set fullName(string) {
+    // this.firstName = string.split(" ")[0];
+    // this.lastName = string.split(" ")[1];
+    //or we can use the code below that is in one line and better
+    [this.firstName, this.lastName] = string.split(" ");
+  },
+};
+
+console.log(data.fullName);
+
+data.fullName = "ali sarmad";
+
+console.log(data.fullName);
