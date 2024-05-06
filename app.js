@@ -819,3 +819,24 @@
 // sayMyName = sayMyName.bind(data);
 
 // sayMyName();
+
+// =============================================
+// =============================================
+
+//------------------------  call,apply   ------------------------
+
+// globalThis.name = "aref";
+
+// function sayMyName(age, lastName) {
+//   console.log(`Your name is ${this.name}`);
+//   console.log(age, lastName);
+// }
+
+// sayMyName(23, "keyhani");
+
+// const data = { name: "Hamid" };
+
+// sayMyName.call(data, 25, "mohammadi");
+// //the diffrence between call and apply is if you want to set a parameter value you need to keep it in array like code below
+// const data2 = { name: "Reza" };
+// sayMyName.apply(data, [27, "sasani"]);
