@@ -800,3 +800,22 @@
 
 // const abc = myData.showMsg;
 // abc();
+
+// =============================================
+// =============================================
+
+//------------------------  bind   ------------------------
+
+// globalThis.name = "aref";
+
+// function sayMyName() {
+//   console.log(`Your name is ${this.name}`);
+//   console.log(this);
+// }
+
+// sayMyName();
+
+// const data = { name: "Hamid" };
+// sayMyName = sayMyName.bind(data);
+
+// sayMyName();
