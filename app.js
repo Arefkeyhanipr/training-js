@@ -918,3 +918,29 @@
 
 // console.log(resultPostTwo());
 // console.log(resultPostTwo());
+
+// =============================================
+// =============================================
+
+//------------------------  pure & impure function   ------------------------
+
+// this is a pure function,because everytime that we are giving a value of 3 to it it will return 3 to us
+
+// const dublicate = (number) => number * 2;
+// console.log(dublicate(3));
+// console.log(dublicate(3));
+// console.log(dublicate(3));
+
+//the function below has someside efects,like we areusing the function for dublicating but the function is also changing the name
+//we call this kind of functions impure functions
+
+// let name = "aref";
+
+// const dublicate = (number) => {
+//   name = "ali";
+//   return number * 4;
+// };
+
+// console.log(dublicate(2));
+// console.log(dublicate(2));
+// console.log(dublicate(2));
