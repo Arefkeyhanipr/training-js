@@ -869,3 +869,52 @@
 // data.fullName = "ali sarmad";
 
 // console.log(data.fullName);
+
+// =============================================
+// =============================================
+
+//------------------------  Closure & Factory function   ------------------------
+
+//closure we can say its a function that is returning another function inside of it,the function inside of the function is closure
+// and the function that is returning the function is Factory function
+//lets get to it-->
+
+//the problem with this code below is that you can change the likescounter in global
+//like giving a likecounter+=10, and this is wrong
+// let likesCounter = 0;
+// const like = () => {
+//   likesCounter++;
+//   return likesCounter;
+// };
+
+// console.log(like());
+// console.log(like());
+// console.log(like());
+
+//in the code below like is a - factory function - and the function inside of it is - closure -
+
+function like() {
+  let likesCounter = 0;
+  return function () {
+    likesCounter++;
+    return likesCounter;
+  };
+}
+
+const incraseLike1 = like();
+
+console.log(`post number one has ${incraseLike1()} likes`);
+console.log(`post number one has ${incraseLike1()} likes`);
+console.log(`post number one has ${incraseLike1()} likes`);
+
+//its better to write the code like this if we want to show the log with a text
+
+const incraseLike2 = like();
+
+function resultPostTwo() {
+  let result = `post number two has ${incraseLike2()} likes`;
+  return result;
+}
+
+console.log(resultPostTwo());
+console.log(resultPostTwo());
