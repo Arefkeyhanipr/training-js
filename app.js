@@ -965,3 +965,22 @@
 // //trunc will remove the decimal number
 // const deleteDecimal = Math.trunc(num);
 // console.log(deleteDecimal);
+
+// =============================================
+// =============================================
+
+//------------------------  Math pow,sqrt,abs   ------------------------
+
+// const num1 = 2;
+// const num2 = 6;
+// //pow
+// console.log(Math.pow(num1, num2));
+// console.log(Math.pow(num2, num1));
+
+// //sqrt
+// console.log(Math.sqrt(num2));
+// console.log(Math.sqrt(num1));
+// console.log(Math.sqrt(9));
+
+// //abs
+// console.log(Math.abs(-12));
