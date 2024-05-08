@@ -984,3 +984,22 @@
 
 // //abs
 // console.log(Math.abs(-12));
+
+// =============================================
+// =============================================
+
+//------------------------  Math min,max   ------------------------
+
+// const resultMin = Math.min(1, 4, 5, 7, -1);
+// console.log(resultMin);
+
+// const resultMax = Math.max(1, 4, 5, 7, -1);
+// console.log(resultMax);
+
+// const num = [1, 2, 6, 8, -10, -5];
+
+// const minArrayNum = Math.min(...num);
+// console.log(minArrayNum);
+
+// const maxArrayNum = Math.max(...num);
+// console.log(maxArrayNum);
