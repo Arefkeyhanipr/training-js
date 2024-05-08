@@ -944,3 +944,24 @@
 // console.log(dublicate(2));
 // console.log(dublicate(2));
 // console.log(dublicate(2));
+
+// =============================================
+// =============================================
+
+//------------------------  Math round ,ceil,floor,trunc   ------------------------
+
+// const num = 5.23;
+
+// //we use round to round the number to the up or down as close as it is
+// const rounding = Math.round(num);
+// console.log(rounding);
+
+// //ceil will round the number to up
+// const roundUp = Math.ceil(num);
+// console.log(roundUp);
+// //floor wil round to the down number
+// const roundDown = Math.floor(num);
+// console.log(roundDown);
+// //trunc will remove the decimal number
+// const deleteDecimal = Math.trunc(num);
+// console.log(deleteDecimal);
