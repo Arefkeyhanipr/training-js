@@ -1003,3 +1003,17 @@
 
 // const maxArrayNum = Math.max(...num);
 // console.log(maxArrayNum);
+
+// =============================================
+// =============================================
+
+//------------------------  Math random   ------------------------
+//this number are between 0 and 1--> 0<random number, 1>random number
+
+// const random = Math.random();
+// console.log(random);
+
+// //if you want to make it bigger you can do this
+
+// const bigRandom = Math.random();
+// console.log(random * 10);
