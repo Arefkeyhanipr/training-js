@@ -1030,3 +1030,17 @@
 // const date = new Date();
 
 // console.log(date);
+
+//------------------------  Date year,month & ...   ------------------------
+
+// //the parameters in the date are like this, Date(year,month,day,hour,minute,secound)
+// const date = new Date(2001, 0, 25, 12, 30, 5);
+// console.log(date);
+// //we can write it with sting too
+// const date2 = new Date("3 jan 2001");
+// const date3 = new Date("1/10/2001");
+
+// console.log(date2);
+// console.log(date3);
+// //as you can see for the months if we are using numbers the months will start at 0-->jan=0
+// //but in the string months start at 1--> jan=1
