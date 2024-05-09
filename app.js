@@ -1059,3 +1059,38 @@
 // //week starts at monday
 // console.log(date.getDay());
 // console.log(date.getUTCHours());
+
+// =============================================
+// =============================================
+
+//------------------------  set Interval &set time out   ------------------------
+
+// let counter = 0;
+
+// // const interval = setInterval(() => {
+// //   counter++;
+// //   console.log(`${counter} seconds past `);
+// //   if (counter == 10) {
+// //     console.log(`Times up!`);
+// //     clearInterval(interval);
+// //   }
+// // }, 1000);
+
+// // or we can write it like this:
+
+// const count = () => {
+//   counter++;
+//   console.log(`${counter} seconds past `);
+//   if (counter == 10) {
+//     console.log(`Times up!`);
+//     clearInterval(interval);
+//   }
+// };
+
+// const interval = setInterval(count, 1000);
+
+// setTimeout(() => {
+//   console.log(`milad`);
+// }, 2000);
+
+// //to stop the setimeout we use clearTimeout(-here goes the name of set timeout-)
