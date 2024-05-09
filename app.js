@@ -1044,3 +1044,18 @@
 // console.log(date3);
 // //as you can see for the months if we are using numbers the months will start at 0-->jan=0
 // //but in the string months start at 1--> jan=1
+
+//------------------------  Date getTime   ------------------------
+
+// const date = new Date();
+// console.log(date);
+
+// console.log(date.getFullYear());
+// console.log(date.getMonth());
+// console.log(date.getDate());
+// console.log(date.getHours());
+// console.log(date.getMinutes());
+// console.log(date.getSeconds());
+// //week starts at monday
+// console.log(date.getDay());
+// console.log(date.getUTCHours());
