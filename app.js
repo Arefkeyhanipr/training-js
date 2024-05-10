@@ -1094,3 +1094,25 @@
 // }, 2000);
 
 // //to stop the setimeout we use clearTimeout(-here goes the name of set timeout-)
+
+// =============================================
+// =============================================
+
+//------------------------------------------------     Error     ------------------------------------------------
+
+// //Error Handeling
+// const makeString = (arr) => {
+//   console.log(arr.join(" "));
+// };
+
+// //this will give an error
+// // makeString(22);
+
+// try {
+//   makeString(22);
+//   console.log(`All good! :)`);
+// } catch (error) {
+//   console.log(error);
+//   console.log(`we have an error! :(
+// Please try again later.`);
+// }
