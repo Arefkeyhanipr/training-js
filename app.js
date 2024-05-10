@@ -1138,3 +1138,26 @@
 
 // //we use the finally for the final thing that we want to do
 // //like reset the function or anything else
+
+//------------------------------------------------
+
+//throw
+
+// const makeString = (arr) => {
+//   console.log(arr.join(" "));
+// };
+
+// try {
+//   makeString(22);
+//   console.log(`All good! :)`);
+// } catch (error) {
+//   console.log(error);
+//   console.log(`we have an error! :(
+// Please try again later.`);
+//   throw { message: `test the entry of makeString` };
+// } finally {
+//   //clean up
+//   console.log(`Lets go to the next part`);
+// }
+
+// //with throw we can make an error so the other programers can see it
