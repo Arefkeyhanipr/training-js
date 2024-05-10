@@ -1116,3 +1116,25 @@
 //   console.log(`we have an error! :(
 // Please try again later.`);
 // }
+//------------------------------------------------
+
+// // finally
+
+// const makeString = (arr) => {
+//   console.log(arr.join(" "));
+// };
+
+// try {
+//   makeString(22);
+//   console.log(`All good! :)`);
+// } catch (error) {
+//   console.log(error);
+//   console.log(`we have an error! :(
+// Please try again later.`);
+// } finally {
+//   //clean up
+//   console.log(`Lets go to the next part`);
+// }
+
+// //we use the finally for the final thing that we want to do
+// //like reset the function or anything else
