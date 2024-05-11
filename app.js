@@ -1196,7 +1196,7 @@
 // ]);
 // console.log(myMap2);
 
-//------------------------------------------------
+//---------------------- get,size,delete,clear,has--------------------------
 
 // //working more with map
 // const myMap = new Map();
@@ -1221,3 +1221,37 @@
 // const result4 = myMap.clear();
 
 // console.log(myMap);
+
+//----------------------- iteration -------------------------
+
+// const myMap = new Map();
+
+// myMap.set("name", "aref");
+// myMap.set("age", 23);
+
+// const keys = myMap.keys();
+
+// console.log(keys);
+
+// for (const key of keys) {
+//   console.log(`the key is ${key}`);
+//   console.log(myMap.get(key));
+// }
+
+// const values = myMap.values();
+
+// for (const value of values) {
+//   console.log(`the value is ${value}`);
+// }
+
+// myMap.forEach((value, key) => {
+//   console.log(value);
+//   console.log(key);
+// });
+
+// //the entries will give the value and the key in the same time
+// const entries = myMap.entries();
+// console.log(entries);
+// for (const entry of entries) {
+//   console.log(entry);
+// }
