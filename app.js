@@ -1261,3 +1261,23 @@
 // const mySet = new Set([1, 2, "aref", [23, 55, 14]]);
 // mySet.add(22);
 // console.log(mySet);
+
+//----------------------- set methods -------------------------
+
+// const mySet = new Set([1, 2, "aref", [23, 55, 14]]);
+
+// console.log(mySet);
+
+// const result = mySet.size;
+// const result2 = mySet.has(14);
+// const result3 = mySet.has(2);
+// const result4 = mySet.delete(1);
+
+// console.log(result);
+// console.log(result2);
+// console.log(result3);
+// console.log(result4);
+
+// const result5 = mySet.clear;
+
+// console.log(result5);
