@@ -1161,3 +1161,37 @@
 // }
 
 // //with throw we can make an error so the other programers can see it
+
+// =============================================
+// =============================================
+
+//------------------------------------------------     map and set     ------------------------------------------------
+
+//-----------------------  map  -------------------------
+
+// //in the objects we cant use an array or object as an key,so we can use map instead
+
+// const myMap = new Map();
+
+// // myMap.set("name", "aref");
+
+// // myMap.set([1, 2, 3], 6);
+
+// // myMap.set({ age: 23 }, true);
+
+// // console.log(myMap);
+
+// //better to write like this
+
+// myMap.set("name", "aref").set([1, 2, 3], 6).set({ age: 23 }, true);
+
+// console.log(myMap);
+
+// //or we can write the codes with only Map like this
+
+// const myMap2 = new Map([
+//   ["name", "aref"],
+//   [[1, 2, 3], 6],
+//   [{ age: 26 }, true],
+// ]);
+// console.log(myMap2);
