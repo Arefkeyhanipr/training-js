@@ -1195,3 +1195,29 @@
 //   [{ age: 26 }, true],
 // ]);
 // console.log(myMap2);
+
+//------------------------------------------------
+
+// //working more with map
+// const myMap = new Map();
+
+// myMap.set("name", "aref");
+
+// myMap.set("age", 23);
+// myMap.set("nothing", "need to delete");
+
+// const result = myMap.get("name");
+// const result2 = myMap.size;
+// const result3 = myMap.delete("nothing");
+// const result5 = myMap.has("age");
+// const result6 = myMap.has("agee");
+
+// console.log(result);
+// console.log(result2);
+// console.log(myMap);
+// console.log(result5);
+// console.log(result6);
+// 6;
+// const result4 = myMap.clear();
+
+// console.log(myMap);
