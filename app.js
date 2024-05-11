@@ -1255,3 +1255,9 @@
 // for (const entry of entries) {
 //   console.log(entry);
 // }
+
+//-----------------------  set  -------------------------
+
+// const mySet = new Set([1, 2, "aref", [23, 55, 14]]);
+// mySet.add(22);
+// console.log(mySet);
