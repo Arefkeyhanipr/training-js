@@ -1222,7 +1222,7 @@
 
 // console.log(myMap);
 
-//----------------------- iteration -------------------------
+//----------------------- map iteration -------------------------
 
 // const myMap = new Map();
 
@@ -1281,3 +1281,17 @@
 // const result5 = mySet.clear;
 
 // console.log(result5);
+
+//----------------------- Set iteration -------------------------
+
+// const mySet = new Set([1, 2, "aref", [23, 55, 14]]);
+
+// const values = mySet.values();
+
+// console.log(values);
+
+// for (const value of values) {
+//   console.log(`this is a  value ${value}`);
+// }
+
+// mySet.forEach((value) => console.log(value));
