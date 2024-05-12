@@ -1311,3 +1311,21 @@
 
 // console.log(sym3);
 // console.log(sym3.description);
+
+//----------------------- The use of Symbol -------------------------
+
+// const age = Symbol("age"); //primitive type
+
+// const data = {
+//   firstName: "aref",
+//   lastName: "keyhani",
+//   [age]: 26, // Hidden property
+// };
+
+// console.log(data);
+// console.log(Object.keys(data));
+// for (const i in data) {
+//   console.log(i);
+// }
+// //as you can see the symbol is hidden, and we cant use any loops or changes that we make on the object on the symbol too
+// //like when we want to change everything in a object but not one of them we can use symbol so it will be hidden from the change
