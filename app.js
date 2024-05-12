@@ -1329,3 +1329,55 @@
 // }
 // //as you can see the symbol is hidden, and we cant use any loops or changes that we make on the object on the symbol too
 // //like when we want to change everything in a object but not one of them we can use symbol so it will be hidden from the change
+
+//----------------------- shared Symbol -------------------------
+
+// // const sym1 = Symbol.for("name");
+// // const sym2 = Symbol.for("name");
+// // console.log(sym1 === sym2);
+
+// // const sym3 = Symbol("name");
+// // const sym4 = Symbol.for("name");
+
+// // console.log(sym3 === sym4);
+
+// // const sym5 = Symbol("name");
+// // const sym6 = Symbol("name");
+
+// // console.log(sym5 === sym6);
+
+// // const data = {
+// //   firstName: "aref",
+// //   lastName: "keyhani",
+// // };
+
+// // const add = () => {
+// //   const age = Symbol();
+// //   data[age] = 23;
+// // };
+
+// // add();
+
+// // console.log(data);
+// // console.log(data[age]);
+
+// //problem in here is that we cant use the age in the function
+// //so here we will use symbol.for() like the code below
+// const data = {
+//   firstName: "aref",
+//   lastName: "keyhani",
+// };
+
+// const add = () => {
+//   const age = Symbol.for("age");
+//   data[age] = 23;
+// };
+
+// add();
+// const age2 = Symbol.for("age");
+// console.log(data);
+// console.log(data[age2]);
+
+// // so we srite ha symbol.for instead of symbol,
+// //and outside of the function we are naming the age2 and using the age of the funciton
+// //if you remember we said that symbol.for() are same,so here our problem will be solved
