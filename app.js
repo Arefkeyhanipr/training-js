@@ -1295,3 +1295,19 @@
 // }
 
 // mySet.forEach((value) => console.log(value));
+
+// =============================================
+// =============================================
+
+//------------------------------------------------    symbol     ------------------------------------------------
+
+// const sym1 = Symbol();
+// const sym2 = Symbol();
+// console.log(sym1);
+// console.log(sym2);
+// console.log(sym1 === sym2);
+// console.log(typeof sym1);
+// const sym3 = Symbol("name"); // description
+
+// console.log(sym3);
+// console.log(sym3.description);
