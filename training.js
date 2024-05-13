@@ -69,3 +69,25 @@
 
 // //and the result is every first letter of an word is Uppercase like this -> Hello World Im Aref
 // console.log(makeTheTextAgain);
+// =============================================
+// =============================================
+//Replace a part of phone number with stars
+
+// const num = "0912123456789";
+
+// const substring = num.slice(6, 10);
+
+// console.log(substring);
+
+// const stars = "****";
+
+// const hiddenNumber = num.replace(substring, stars);
+
+// console.log(hiddenNumber);
+// // or we can write it in one line like this code below(i dont recommande this cause its not a clean code)
+
+// const num2 = "0910865841401";
+
+// const finalPhoneNumber = num2.replace(num2.slice(6, 10), "****");
+
+// console.log(finalPhoneNumber);
