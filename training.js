@@ -43,3 +43,29 @@
 
 // console.log(finalWord);
 //Done
+
+// =============================================
+// =============================================
+//Capitalize first letter of every word in the text
+
+// const word = "hello world im aref";
+
+// const spilited = word.split(" ");
+
+// console.log(spilited);
+
+// const myArray = [];
+
+// for (const i of spilited) {
+//   const firstLetter = i.charAt(0);
+//   const upperCaseFirstLetter = firstLetter.toUpperCase();
+//   const finalWords = i.replace(firstLetter, upperCaseFirstLetter);
+//   const replaceFinalWithOld = myArray.push(finalWords);
+// }
+
+// console.log(myArray);
+
+// const makeTheTextAgain = myArray.join(" ");
+
+// //and the result is every first letter of an word is Uppercase like this -> Hello World Im Aref
+// console.log(makeTheTextAgain);
