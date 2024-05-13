@@ -34,3 +34,12 @@
 
 // =============================================
 // =============================================
+//Capitalize first letter of a word
+
+// const word = "hello world im aref";
+// const firstLetter = word.charAt(0);
+// const upperCaseFirstLetter = firstLetter.toUpperCase();
+// const finalWord = word.replace(firstLetter, upperCaseFirstLetter);
+
+// console.log(finalWord);
+//Done
