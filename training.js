@@ -133,3 +133,35 @@
 
 // console.log(firstName);
 // console.log(lastName);
+
+// =============================================
+// =============================================
+// 1. create an array
+// 2. add your fav sports
+// 3.use this list in a text
+// 4. remove the last item from the list
+// 5. create a new array for the first two items then replace it in main array
+
+// const sports = [];
+
+// console.log(sports);
+// //1 is Done
+// sports.push("basketball", "box", "runing", "kickBox", "swiming");
+// console.log(sports);
+// //2 is done
+
+// const stringSports = sports.join(", ");
+// const text = ` My fav sports are ${stringSports}`;
+// console.log(text);
+// //3 is done
+
+// sports.pop();
+// console.log(sports);
+// //4 is done
+
+// const firstTwoSports = sports.slice(0, 2);
+// console.log(firstTwoSports);
+
+// sports.splice(0, 2, firstTwoSports);
+// console.log(sports);
+// //5 is done
