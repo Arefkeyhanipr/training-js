@@ -91,3 +91,45 @@
 // const finalPhoneNumber = num2.replace(num2.slice(6, 10), "****");
 
 // console.log(finalPhoneNumber);
+
+// =============================================
+// =============================================
+//Extract First name and Last name
+
+// const fullName = "Aref Keyhani";
+
+// const eachWord = fullName.split(" ");
+
+// console.log(eachWord);
+// const firstName = eachWord[0];
+// const lastName = eachWord[1];
+
+// //or we can write it like this
+
+// const firstName = [];
+// const lastName = [];
+
+// function getFirstName() {
+//   firstName.push(eachWord[0]);
+// }
+// function getLastName() {
+//   lastName.push(eachWord[1]);
+// }
+
+// getFirstName();
+// getLastName();
+// const finalName = firstName.join("");
+// const finalLastName = lastName.join("");
+// console.log(finalName);
+// console.log(finalLastName);
+
+// //or we can write it like this
+
+// const fullName = "Aref Keyhani";
+
+// const spaceInex = fullName.indexOf(" ");
+// const firstName = fullName.slice(0, spaceInex);
+// const lastName = fullName.slice(spaceInex + 1);
+
+// console.log(firstName);
+// console.log(lastName);
