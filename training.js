@@ -165,3 +165,34 @@
 // sports.splice(0, 2, firstTwoSports);
 // console.log(sports);
 // //5 is done
+
+// =============================================
+// =============================================
+//Array Destruncturing
+//// full stack = [["HTML","CSS","JS","REACT"],["NODE","EXPRESS","MONGODB"]]
+//First way is code below
+
+// const fullStack = [
+//   ["HTML", "CSS", "JS", "REACT"],
+//   ["NODE", "EXPRESS", "MONGODB"],
+// ];
+// const frontEnd = fullStack[0];
+// const backEnd = fullStack[1];
+
+// console.log(frontEnd);
+// console.log(backEnd);
+
+//Secound way is code below
+
+// const fullStack = [
+//   ["HTML", "CSS", "JS", "REACT"],
+//   ["NODE", "EXPRESS", "MONGODB"],
+// ];
+
+// const [frontEnd, backEnd] = fullStack;
+
+// const [CSS, JS] = frontEnd;
+// const [NODE, EXPRESS] = backEnd;
+
+// console.log(CSS, JS);
+// console.log(NODE, EXPRESS);
