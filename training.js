@@ -196,3 +196,37 @@
 
 // console.log(CSS, JS);
 // console.log(NODE, EXPRESS);
+
+// =============================================
+// =============================================
+//Destructue data
+
+// const data = [
+//   {
+//     identity: {
+//       name: "aref",
+//       lastName: "keyhani",
+//       age: 23,
+//       country: "iran",
+//       city: "Tehran",
+//     },
+//   },
+//   { skills: ["js", "html", "css"] },
+// ];
+
+// const [identity, skills] = data;
+
+// console.log(identity);
+// console.log(skills);
+
+// const {
+//   identity: { name, lastName, age, country, city },
+// } = identity;
+
+// console.log(name, lastName, age, country, city);
+
+// const {
+//   skills: [js, html, css],
+// } = skills;
+
+// console.log(js, html, css);
