@@ -258,3 +258,19 @@
 // for (const i of values) {
 //   console.log(i);
 // }
+
+// =============================================
+// =============================================
+
+//Write a JS code to print Even numbers in given array
+
+// const numbers = [10, 15, 17, 16, 25, 28, 102, 904];
+// const evenArray = [];
+// for (const i of numbers) {
+//   //   console.log(i);
+//   if (i % 2 == 0) {
+//     evenArray.push(i);
+//   }
+// }
+
+// console.log(evenArray);
