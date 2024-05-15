@@ -230,3 +230,31 @@
 // } = skills;
 
 // console.log(js, html, css);
+
+// =============================================
+// =============================================
+//get the keys and values of the object
+
+// const object = {
+//   name: "aref",
+//   lastName: "keyhani",
+//   age: 23,
+// };
+
+// const keys = Object.keys(object);
+
+// console.log(keys);
+
+// for (let i = 0; i < keys.length; i++) {
+//   console.log(`this is one of the keys ${keys[i]}`);
+//   console.log(`this is one of the values ${object[keys[i]]}`);
+// }
+////or we can write it like this
+// const values = Object.values(object);
+
+// for (const i of keys) {
+//   console.log(i);
+// }
+// for (const i of values) {
+//   console.log(i);
+// }
