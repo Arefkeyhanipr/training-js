@@ -326,3 +326,19 @@
 // };
 
 // console.log(determine("01/25/2001"));
+
+// =============================================
+// =============================================
+
+// remove duplicate in an Array
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 3, 4, 5, 6];
+
+// const newSet = new Set(arr);
+// const newArr = [...newSet];
+// console.log(newArr);
+
+// //or we can write it like this
+
+// const newArr2 = [...new Set(arr)];
+// console.log(newArr);
