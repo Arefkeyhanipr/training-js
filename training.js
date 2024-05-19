@@ -310,3 +310,19 @@
 // }
 
 // console.log(newArray);
+
+// =============================================
+// =============================================
+
+// determine age based on day -> my birthday:  01/25/2001
+
+// const determine = (birthday) => {
+//   const birthDateMS = new Date(birthday).getTime();
+//   const now = new Date().getTime();
+//   const ageMS = now - birthDateMS;
+//   const oneDay = 24 * 60 * 60 * 1000;
+//   const age = Math.floor(ageMS / oneDay);
+//   return age;
+// };
+
+// console.log(determine("01/25/2001"));
