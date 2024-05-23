@@ -311,6 +311,17 @@
 
 // console.log(newArray);
 
+// // or we can write the code like this with for in
+// const newArray2 = [];
+
+// for (let i in array) {
+//   if (newArray2.indexOf(array[i]) === -1) {
+//     newArray2.push(array[i]);
+//   }
+// }
+
+// console.log(newArray2);
+
 // =============================================
 // =============================================
 
