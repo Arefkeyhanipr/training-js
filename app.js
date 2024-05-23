@@ -1405,3 +1405,33 @@
 // const newElement = document.getElementById("text");
 
 // console.log(newElement);
+
+//==============================================================
+
+// Multi selector
+
+//query Selector All
+// const elementList = document.querySelectorAll("h1");
+// const elementList2 = document.querySelectorAll(".container");
+
+// console.log(elementList);
+// console.log(elementList[0]);
+// console.log(elementList[1]);
+
+// console.log(elementList2);
+// console.log(elementList2[0]);
+// console.log(elementList2[1]);
+
+// //Get Elemeny by ...
+
+// const elementList3 = document.getElementsByTagName("p");
+
+// console.log(elementList3);
+// console.log(elementList3[0]);
+// console.log(elementList3[1]);
+
+// const elementList4 = document.getElementsByClassName("text");
+
+// console.log(elementList4);
+// console.log(elementList4[0]);
+// console.log(elementList4[1]);
