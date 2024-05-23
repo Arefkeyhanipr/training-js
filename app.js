@@ -1381,3 +1381,27 @@
 // // so we srite ha symbol.for instead of symbol,
 // //and outside of the function we are naming the age2 and using the age of the funciton
 // //if you remember we said that symbol.for() are same,so here our problem will be solved
+
+// =======================================================================================================================================
+// =======================================================================================================================================
+// =======================================================================================================================================
+//------------------------------------------------     Dom & Events     ------------------------------------------------
+
+// Single selector
+
+// //query Selector
+// const element = document.querySelector("h1");
+// const elementH1 = document.querySelector(".container");
+// const elementP = document.querySelector("#text");
+
+// console.log(element);
+// console.dir(element);
+
+// console.log(elementH1);
+
+// console.log(elementP);
+
+// //Get Elemeny by ...
+// const newElement = document.getElementById("text");
+
+// console.log(newElement);
