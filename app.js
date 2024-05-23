@@ -1435,3 +1435,12 @@
 // console.log(elementList4);
 // console.log(elementList4[0]);
 // console.log(elementList4[1]);
+
+//===============================
+//Select the elements inside the other elemts
+
+const header = document.querySelector("#header");
+const textOfHeader = header.querySelector("#text");
+
+console.log(header);
+console.log(textOfHeader);
