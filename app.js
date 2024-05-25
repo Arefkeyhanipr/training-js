@@ -1469,3 +1469,34 @@
 // console.log(elem.firstElementChild);
 // //and this one will show the last child that is the --> <p>
 // console.log(elem.lastElementChild);
+
+//----------------------- changing css with js -------------------------
+
+// const elem = document.querySelector("#header");
+
+// elem.style.color = "gray";
+// elem.style.fontSize = "20px";
+// elem.style.backgroundColor = "black";
+
+// elem.firstElementChild.style.color = "green";
+
+// const elem2 = document.querySelector("#main");
+
+// //this code below will delete the class name that the element have and replace it with what you want
+// elem2.className = "container2";
+
+// console.log(elem2);
+// //with code below we can add or remove the class names of an elemnt
+// elem2.classList.add("container");
+// elem2.classList.remove("imMain");
+// console.log(elem2);
+
+// //with code below we can toggle the class for an element
+// // elem2.classList.toggle("container2");
+// //we can use it like this
+
+// setInterval(() => {
+//   elem2.classList.toggle("container2");
+// }, 5000);
+
+// //this way the style will change every 5 secounds
