@@ -1500,3 +1500,25 @@
 // }, 5000);
 
 // //this way the style will change every 5 secounds
+
+//----------------------- Inserting to DOM -------------------------
+
+// const elem = document.querySelector("div");
+
+// // if we want to replace our text with the text HTML we can use this
+
+// // elem.innerHTML = "<span>Removed</span>";
+
+// //if we dont want to replace thehtml but we want to add it we can use it like this
+
+// elem.innerHTML += "<span>Removed</span>";
+
+// //we can also add  elemts to our HTML
+
+// const btn = document.createElement("button");
+
+// btn.innerText = "BIG BUTTON";
+// btn.style.fontSize = "30px";
+// btn.style.backgroundColor = "gray";
+// btn.style.color = "black";
+// elem.appendChild(btn);
