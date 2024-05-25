@@ -1522,3 +1522,19 @@
 // btn.style.backgroundColor = "gray";
 // btn.style.color = "black";
 // elem.appendChild(btn);
+
+//----------------------- Delete from DOM -------------------------
+
+// const elem = document.querySelector("div");
+
+// //this will delete all of the div
+
+// elem.remove();
+
+// //this will delete the first child of the div--> the h1
+
+// elem.removeChild(elem.children[0]);
+
+// //or we can write it like this
+
+// elem.removeChild(elem.firstElementChild);
