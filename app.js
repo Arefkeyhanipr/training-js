@@ -1538,3 +1538,22 @@
 // //or we can write it like this
 
 // elem.removeChild(elem.firstElementChild);
+
+//----------------------- Events -------------------------
+
+// const elem = document.querySelector("#main");
+// const btn = document.querySelector(".btn");
+
+// // btn.addEventListener("click", change);
+
+// // function change() {
+// //   elem.classList.toggle("container2");
+// // }
+
+// //we can write the function inside of the addeventlistener like the code below
+
+// //in this way it doesnt matter that we give a name to the function or not
+
+// btn.addEventListener("click", function () {
+//   elem.classList.toggle("container2");
+// });
