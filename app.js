@@ -1439,8 +1439,33 @@
 //===============================
 //Select the elements inside the other elemts
 
-const header = document.querySelector("#header");
-const textOfHeader = header.querySelector("#text");
+// const header = document.querySelector("#header");
+// const textOfHeader = header.querySelector("#text");
 
-console.log(header);
-console.log(textOfHeader);
+// console.log(header);
+// console.log(textOfHeader);
+
+//----------------------- Parents - siblings -------------------------
+
+// const elem = document.querySelector("div");
+
+// //this will refer to the body because the div is inside of the body
+// console.log(elem.parentNode);
+// console.log(elem.parentElement);
+
+// //and this will show what are inside of the div
+// console.log(elem.childNodes);
+// console.log(elem.children);
+
+// //as you can see the childnodes will return more values because it will even give the spaces after the lines
+// //like if we have 2 lines after every line we will have a space as we made it with enter,node will show that to us as well
+// //
+// //
+// //this will show whats after the element div and in this code it will show the other div
+// console.log(elem.nextElementSibling);
+// //and this code will show the h2 because its the previous code
+// console.log(elem.previousElementSibling);
+// //this code below will show the first child of the div that is --> <h1>
+// console.log(elem.firstElementChild);
+// //and this one will show the last child that is the --> <p>
+// console.log(elem.lastElementChild);
