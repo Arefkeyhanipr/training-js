@@ -1557,3 +1557,34 @@
 // btn.addEventListener("click", function () {
 //   elem.classList.toggle("container2");
 // });
+
+//----------------------- types of Events -------------------------
+
+// const btn = document.querySelector(".btn");
+
+// // btn.addEventListener("click", change);
+// // btn.addEventListener("mousedown", change);
+// // btn.addEventListener("mouseup", change);
+// // btn.addEventListener("mouseenter", change);
+// // btn.addEventListener("mouseover", change);
+// // btn.addEventListener("mouseleave", change);
+// // btn.addEventListener("mouseout", change);
+// // btn.addEventListener("mousemove", change);
+
+// function change() {
+//   console.log(`hello`);
+// }
+
+// // btn.addEventListener("keydown", change);
+// // btn.addEventListener("keyup", change);
+// // btn.addEventListener("keydown", change);
+
+// const put = document.querySelector("input");
+
+// // put.addEventListener("change", change);
+// // put.addEventListener("focus", change);
+// // put.addEventListener("blur", change);
+
+// // window.addEventListener("load", change);
+// // window.addEventListener("unload", change);
+// // window.addEventListener("resize", change);
