@@ -353,6 +353,7 @@
 
 // const newArr2 = [...new Set(arr)];
 // console.log(newArr);
+
 // =============================================
 // =============================================
 
@@ -369,3 +370,38 @@
 // } else {
 //   console.log(`its a scalene triangle`);
 // }
+
+// =============================================
+// =============================================
+
+//Write a funciton to find the count of a letter in a string
+
+// const counterLetter = (str, letter) => {
+//   let counter = 0;
+//   str = str.toLowerCase();
+//   letter = letter.toLowerCase();
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === letter) {
+//       counter++;
+//     }
+//   }
+//   return counter;
+// };
+
+// const result = counterLetter("Hello guys im aref and im living in tehran", "h");
+
+// console.log(result);
+
+//or we can write it with anonymous function -->
+
+// (function (str, letter) {
+//   let counter = 0;
+//   str = str.toLowerCase();
+//   letter = letter.toLowerCase();
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === letter) {
+//       counter++;
+//     }
+//   }
+//   console.log(counter);
+// })("Hello guys im aref and im living in tehran", "h");
