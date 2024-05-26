@@ -405,3 +405,85 @@
 //   }
 //   console.log(counter);
 // })("Hello guys im aref and im living in tehran", "h");
+
+// =============================================
+// =============================================
+
+//  Find customers with age > 60 and age < 10
+
+// const customers = [
+//   {
+//     id: 1,
+//     firstName: "Abby",
+//     lastName: "Thomas",
+//     gender: "M",
+//     married: true,
+//     age: 32,
+//     expense: 500,
+//     purchased: ["Shampoo", "Toys", "Book"],
+//   },
+//   {
+//     id: 2,
+//     firstName: "Jerry",
+//     lastName: "Tom",
+//     gender: "M",
+//     married: true,
+//     age: 64,
+//     expense: 100,
+//     purchased: ["Stick", "Blade"],
+//   },
+//   {
+//     id: 3,
+//     firstName: "Dianna",
+//     lastName: "Cherry",
+//     gender: "F",
+//     married: true,
+//     age: 22,
+//     expense: 1500,
+//     purchased: ["Lipstik", "Nail Polish", "Bag", "Book"],
+//   },
+//   {
+//     id: 4,
+//     firstName: "Dev",
+//     lastName: "Currian",
+//     gender: "M",
+//     married: true,
+//     age: 82,
+//     expense: 90,
+//     purchased: ["Book"],
+//   },
+//   {
+//     id: 5,
+//     firstName: "Maria",
+//     lastName: "Gomes",
+//     gender: "F",
+//     married: false,
+//     age: 7,
+//     expense: 300,
+//     purchased: ["Toys"],
+//   },
+// ];
+
+// for (let person of customers) {
+//   if (person.age > 60) {
+//     console.log(
+//       `${person.firstName} ${person.lastName} is older then 60 years `
+//     );
+//   } else if (person.age < 10) {
+//     console.log(
+//       `${person.firstName} ${person.lastName} is younger then 10 years`
+//     );
+//   }
+// }
+
+// //or we can write this with filter and get them in an array then run a loop on it
+
+// const over60 = customers.filter((customers) => customers.age > 60);
+// const under10 = customers.filter((customers) => customers.age < 10);
+
+// for (let older of over60) {
+//   console.log(`${older.firstName} ${older.lastName} is older then 60 years`);
+// }
+// for (let kids of under10) {
+//   console.log(`${kids.firstName} ${kids.lastName} is younger then 10 years`);
+// }
