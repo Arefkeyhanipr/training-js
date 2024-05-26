@@ -1729,3 +1729,18 @@
 // console.log(btn.offsetLeft);
 
 // console.dir(btn);
+
+// =======================================================================================================================================
+// =======================================================================================================================================
+// =======================================================================================================================================
+//------------------------------------------------     BOM     ------------------------------------------------
+
+//----------------------- Window -------------------------
+
+// //outer height and width is all the page
+// console.log(`outer height : ${window.outerHeight}`);
+// console.log(`outer width :${window.outerWidth}`);
+
+// //inner height and width is the part of the page that we see,like the inspect is not a part of it
+// console.log(`inner height :${window.innerHeight}`);
+// console.log(`inner width :${window.innerWidth}`);
