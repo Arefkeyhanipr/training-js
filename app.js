@@ -1617,3 +1617,64 @@
 // };
 
 // form.addEventListener("submit", change);
+
+//----------------------- Stop propagation -------------------------
+
+// const div = document.querySelector("#main");
+
+// const btn = document.querySelector(".btn");
+
+// //what happens here is that if we click on the button, the button and the div will be loged
+
+// // const change = (event) => {
+// //   console.log(event.target);
+// // };
+
+// // console.log(div);
+
+// // btn.addEventListener("click", change);
+// // div.addEventListener("click", change);
+
+// //let me clearify it for you
+
+// // const showButton = (event) => {
+// //   console.log(`button`);
+// // };
+
+// // const showDiv = (event) => {
+// //   console.log(`Div`);
+// // };
+
+// // btn.addEventListener("click", showButton);
+// // div.addEventListener("click", showDiv);
+
+// //as you can see when we click on the div and the elemts inside of it it will log the "div"
+// //but when we click on the button we will get "button" and the "div"
+// //so how can we fix this problem? with Stop propagation like code below
+
+// // const showButton = (event) => {
+// //   event.stopPropagation();
+// //   console.log(`button`);
+// // };
+
+// // const showDiv = (event) => {
+// //   console.log(`Div`);
+// // };
+
+// // btn.addEventListener("click", showButton);
+// // div.addEventListener("click", showDiv);
+
+// //with stopPropagation() now the eventlistener doesnt get the parent and only gives us the button it self
+// //so lets write it one more time with getting the elements
+
+// const showButton = (event) => {
+//   event.stopPropagation();
+//   console.log(event.target);
+// };
+
+// const showDiv = (event) => {
+//   console.log(event.target);
+// };
+
+// btn.addEventListener("click", showButton);
+// div.addEventListener("click", showDiv);
