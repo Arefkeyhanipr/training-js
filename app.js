@@ -1710,3 +1710,22 @@
 // train.dataset.next = "React";
 
 // console.log(train.dataset);
+
+//----------------------- size of an element -------------------------
+
+// const btn = document.querySelector(".btn");
+
+// console.log(btn.offsetWidth);
+// console.log(btn.clientWidth);
+// //the reason that clientWidth is smaller is that it doesnt take the border so its smaller
+
+// console.log(btn.offsetHeight);
+// console.log(btn.clientHeight);
+
+// //offset hight and width are for the element itself
+// //we can get the space between element from left of the page and up of the page
+
+// console.log(btn.offsetTop);
+// console.log(btn.offsetLeft);
+
+// console.dir(btn);
