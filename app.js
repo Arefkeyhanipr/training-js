@@ -1774,3 +1774,9 @@
 
 // history.back();
 // history.forward();
+
+//----------------------- Navigator -------------------------
+//this is information of your browser
+// console.log(navigator);
+
+// console.log(navigator.geolocation);
