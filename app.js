@@ -1756,3 +1756,14 @@
 
 // console.log(`avail height : ${screen.availHeight}`);
 // console.log(`avail width : ${screen.availWidth}`);
+
+//----------------------- location -------------------------
+
+// console.log(window.location);
+
+// location.assign("https://google.com");
+// location.href = "https://google.com";
+
+// location.replace("https://google.com");
+
+// console.log(location.reload());
