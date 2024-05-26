@@ -1588,3 +1588,19 @@
 // // window.addEventListener("load", change);
 // // window.addEventListener("unload", change);
 // // window.addEventListener("resize", change);
+
+//----------------------- Target & event object -------------------------
+
+// const btn = document.querySelector(".btn");
+// //with target you can find the element that you want
+// // const change = (event) => {
+// //   console.log(event.target);
+// // };
+// //from the event in here we can get more information from the element
+// const change = (event) => {
+//   console.log(event);
+// };
+
+// btn.addEventListener("click", change);
+// // like with this event listener when we use keyboard it will tell us witch key we press down and it will even give the code of the key
+// btn.addEventListener("keydown", change);
