@@ -1700,3 +1700,13 @@
 
 // //as you can see as soon as we click on the div the showbutton and its eventlistener doesnt work
 // //because we deleted from the code by clicking on the div,befor clicking on the div you can use the button but after that there is no use
+
+//----------------------- Dataset -------------------------
+
+// const train = document.querySelector("#train");
+
+// console.log(train.dataset);
+
+// train.dataset.next = "React";
+
+// console.log(train.dataset);
