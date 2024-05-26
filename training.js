@@ -353,3 +353,19 @@
 
 // const newArr2 = [...new Set(arr)];
 // console.log(newArr);
+// =============================================
+// =============================================
+
+//check triangle with 9 cm and 5cm and 6 cm and say the name of it
+
+// const side1 = 9;
+// const side2 = 5;
+// const side3 = 6;
+
+// if (side1 === side2 && side2 === side3) {
+//   console.log(`its a Equilateral triangle`);
+// } else if (side1 === side2 || side1 === side3 || side2 === side3) {
+//   console.log(`its a is isosceles triangle`);
+// } else {
+//   console.log(`its a scalene triangle`);
+// }
