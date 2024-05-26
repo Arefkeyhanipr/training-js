@@ -1604,3 +1604,16 @@
 // btn.addEventListener("click", change);
 // // like with this event listener when we use keyboard it will tell us witch key we press down and it will even give the code of the key
 // btn.addEventListener("keydown", change);
+
+//----------------------- Prevent Default -------------------------
+
+// const form = document.querySelector("#main-form");
+
+// //we use preventDefault so the site doesnt reload it self
+
+// const change = (event) => {
+//   event.preventDefault();
+//   console.log(event);
+// };
+
+// form.addEventListener("submit", change);
