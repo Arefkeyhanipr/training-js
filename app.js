@@ -1678,3 +1678,25 @@
 
 // btn.addEventListener("click", showButton);
 // div.addEventListener("click", showDiv);
+
+//----------------------- how to delete the Event -------------------------
+
+// const div = document.querySelector("#main");
+
+// const btn = document.querySelector(".btn");
+
+// const showButton = (event) => {
+//   event.stopPropagation();
+//   console.log(event.target);
+// };
+
+// const showDiv = (event) => {
+//   btn.removeEventListener("click", showButton);
+//   console.log("Div Clicked !");
+// };
+
+// btn.addEventListener("click", showButton);
+// div.addEventListener("click", showDiv);
+
+// //as you can see as soon as we click on the div the showbutton and its eventlistener doesnt work
+// //because we deleted from the code by clicking on the div,befor clicking on the div you can use the button but after that there is no use
