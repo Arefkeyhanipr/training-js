@@ -1744,3 +1744,15 @@
 // //inner height and width is the part of the page that we see,like the inspect is not a part of it
 // console.log(`inner height :${window.innerHeight}`);
 // console.log(`inner width :${window.innerWidth}`);
+
+//----------------------- Screen -------------------------
+
+// //screen height and width will show the size of your screen or lets say the manitor
+
+// console.log(`height : ${screen.height}`);
+// console.log(`width : ${screen.width}`);
+
+// //the avail height and width is the screen that is avaible for us,the avail height is lower then screen height because of the navbar of windows,mac & etc
+
+// console.log(`avail height : ${screen.availHeight}`);
+// console.log(`avail width : ${screen.availWidth}`);
