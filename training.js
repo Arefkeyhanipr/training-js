@@ -487,3 +487,93 @@
 // for (let kids of under10) {
 //   console.log(`${kids.firstName} ${kids.lastName} is younger then 10 years`);
 // }
+
+// =============================================
+
+//  Build customer data with title and full name using the last training
+
+// const customers = [
+//   {
+//     id: 1,
+//     firstName: "Abby",
+//     lastName: "Thomas",
+//     gender: "M",
+//     married: true,
+//     age: 32,
+//     expense: 500,
+//     purchased: ["Shampoo", "Toys", "Book"],
+//   },
+//   {
+//     id: 2,
+//     firstName: "Jerry",
+//     lastName: "Tom",
+//     gender: "M",
+//     married: true,
+//     age: 64,
+//     expense: 100,
+//     purchased: ["Stick", "Blade"],
+//   },
+//   {
+//     id: 3,
+//     firstName: "Dianna",
+//     lastName: "Cherry",
+//     gender: "F",
+//     married: true,
+//     age: 22,
+//     expense: 1500,
+//     purchased: ["Lipstik", "Nail Polish", "Bag", "Book"],
+//   },
+//   {
+//     id: 4,
+//     firstName: "Dev",
+//     lastName: "Currian",
+//     gender: "M",
+//     married: true,
+//     age: 82,
+//     expense: 90,
+//     purchased: ["Book"],
+//   },
+//   {
+//     id: 5,
+//     firstName: "Maria",
+//     lastName: "Gomes",
+//     gender: "F",
+//     married: false,
+//     age: 7,
+//     expense: 300,
+//     purchased: ["Toys"],
+//   },
+// ];
+
+// const customersWithTitle = customers.map((customer) => {
+//   let title = "";
+//   const { firstName, lastName } = customer;
+//   if (customer.gender === "M") {
+//     title = "Mr.";
+//   } else if (customer.gender === "F" && customer.married) {
+//     title = "Mrs.";
+//   } else {
+//     title = "Miss ";
+//   }
+//   customer.fullName = `${title}${firstName} ${lastName}`;
+//   return customer;
+// });
+
+// console.log(customersWithTitle);
+
+// //i dont recommend but we can write this with for loop like this(dont do this) -->
+
+// for (let customer of customers) {
+//   let title = "";
+//   const { firstName, lastName } = customer;
+//   if (customer.gender === "M") {
+//     title = "Mr.";
+//   } else if (customer.gender === "F" && customer.married) {
+//     title = "Mrs.";
+//   } else {
+//     title = "Miss ";
+//   }
+//   customer.fullName = `${title}${firstName} ${lastName}`;
+// }
+
+// console.log(customers);
