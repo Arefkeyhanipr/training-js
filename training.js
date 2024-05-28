@@ -577,3 +577,28 @@
 // }
 
 // console.log(customers);
+
+// =============================================
+// =============================================
+// =============================================
+
+//Generate a random integer
+
+// const generateRandom = (min, max) => {
+//   //   if (min === undefined && max === undefined) {
+//   //     return `Enter Min & Max`;
+//   //   }
+//   //or better to say
+//   if (!min && !max) {
+//     return `Enter Min & Max`;
+//   }
+
+//   if (!max) {
+//     max = min;
+//     min = 0;
+//   }
+//   const result = min + Math.floor(Math.random() * (max - min + 1));
+//   return result;
+// };
+
+// console.log(generateRandom(5, 10));
