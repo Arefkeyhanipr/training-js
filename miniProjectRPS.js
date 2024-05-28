@@ -20,12 +20,23 @@ const checkWinner = (player, computer) => {
   }
 };
 
+//The result of the game
+const showResult = (result) => {
+  if (result === "player") {
+    console.log(`Congrats you won!`);
+  } else if (result === "computer") {
+    console.log(`Damn, you lost. :(`);
+  } else {
+    console.log(`It's a tie. Try again!`);
+  }
+};
+
 const play = () => {
   // ask the player to choose RPS
   const playerChoice = prompt("choose rock,paper,scissors");
 
   //show the choice of the player
-  if (choices.indexOf(playerChoice.toLocaleLowerCase()) !== -1) {
+  if (choices.indexOf(playerChoice.toLowerCase()) !== -1) {
     console.log(`You choose ${playerChoice}`);
   } else {
     console.log(`You cheated !!! only use rock or paper or scissors !`);
@@ -38,9 +49,8 @@ const play = () => {
   //show the choice of computer
   console.log(`computer chooses ${computerChoice}`);
 
-  const result = checkWinner(playerChoice, computerChoice);
-
-  console.log(result);
+  const gameResult = checkWinner(playerChoice, computerChoice);
+  showResult(gameResult);
 };
 
 play();
