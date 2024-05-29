@@ -6,6 +6,9 @@
 // we have only Rock & Paper & Scissors
 const choices = ["rock", "paper", "scissors"];
 
+let playerScore = 0;
+let computerScore = 0;
+
 //who win who lose
 
 const checkWinner = (player, computer) => {
@@ -24,19 +27,26 @@ const checkWinner = (player, computer) => {
 const showResult = (result) => {
   if (result === "player") {
     console.log(`Congrats you won!`);
+    playerScore++;
   } else if (result === "computer") {
     console.log(`Damn, you lost. :(`);
+    computerScore++;
   } else {
     console.log(`It's a tie. Try again!`);
   }
+
+  console.log(`Your score: ${playerScore}`);
+  console.log(`Computer's score: ${computerScore}`);
+  console.log(`__________________________________`);
 };
 
 const play = () => {
   // ask the player to choose RPS
-  const playerChoice = prompt("choose rock,paper,scissors");
+
+  const playerChoice = prompt("choose rock,paper,scissors").toLowerCase();
 
   //show the choice of the player
-  if (choices.indexOf(playerChoice.toLowerCase()) !== -1) {
+  if (choices.indexOf(playerChoice?.toLowerCase()) !== -1) {
     console.log(`You choose ${playerChoice}`);
   } else {
     console.log(`You cheated !!! only use rock or paper or scissors !`);
@@ -51,6 +61,7 @@ const play = () => {
 
   const gameResult = checkWinner(playerChoice, computerChoice);
   showResult(gameResult);
+  play();
 };
 
 play();
