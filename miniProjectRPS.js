@@ -35,6 +35,21 @@ const showResult = (result) => {
     console.log(`It's a tie. Try again!`);
   }
 
+  if (playerScore === 3) {
+    console.log(`Congrats! you won the game!`);
+    alert(`Congrats! YOU WON THE GAME,CHAMPION!
+     Your score: ${playerScore}
+     VS
+    computer's score: ${computerScore}`);
+  }
+  if (computerScore === 3) {
+    console.log(`GAME OVER ! YOU LOST THE GAME`);
+    alert(`GAME OVER ! YOU LOST THE GAME :(
+      Your score: ${playerScore}
+     VS
+    computer's score: ${computerScore}`);
+  }
+
   console.log(`Your score: ${playerScore}`);
   console.log(`Computer's score: ${computerScore}`);
   console.log(`__________________________________`);
@@ -44,7 +59,8 @@ const play = () => {
   // ask the player to choose RPS
 
   const playerChoice = prompt("choose rock,paper,scissors").toLowerCase();
-
+  if (playerScore === 3 || computerScore === 3) {
+  }
   //show the choice of the player
   if (choices.indexOf(playerChoice?.toLowerCase()) !== -1) {
     console.log(`You choose ${playerChoice}`);
@@ -61,7 +77,11 @@ const play = () => {
 
   const gameResult = checkWinner(playerChoice, computerChoice);
   showResult(gameResult);
-  play();
+  if (playerScore === 3 || computerScore === 3) {
+    console.log(`GAME OVER !`);
+  } else {
+    play();
+  }
 };
 
 play();
