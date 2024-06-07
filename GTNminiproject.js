@@ -1,5 +1,6 @@
 const randomNum = Math.ceil(Math.random() * 100);
 let numberOfGuess = 0;
+
 const validateNumber = (value) => {
   if (isNaN(value)) {
     return `You can only enter Numbers`;
@@ -20,9 +21,20 @@ const checkGuess = (guess) => {
     console.log(
       `Your guess (${guess}) was higher then The number, Try again! `
     );
+    alert(
+      `Your guess (${guess}) was higher then The number, Try again! You have ${
+        10 - numberOfGuess
+      } guesses left`
+    );
     play();
   } else {
     console.log(`Your guess (${guess}) was lower then The number, Try again! `);
+    alert(
+      `Your guess (${guess}) was lower then The number, Try again! You have ${
+        10 - numberOfGuess
+      } guesses left`
+    );
+
     play();
   }
 };
@@ -35,11 +47,14 @@ const play = () => {
   }
 
   let num = prompt(`Choose a number between 1 & 100`);
+
   if (num === null) {
-    console.log(`You canceled the game!`);
+    alert(`You canceled the game!`);
+    return;
   } else if (num === "") {
-    console.log(`enter a number to play`);
+    alert(`Enter a number to play!`);
   }
+
   const validation = validateNumber(num);
   if (validation) {
     console.log(validation);
