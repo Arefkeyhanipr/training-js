@@ -58,7 +58,7 @@ const SearchPriceHandler = (event) => {
     const finalPrice = productPrice.split(" ")[0];
     if (!searchPrice) {
       product.style.display = "block";
-    } else if (searchPrice > finalPrice) {
+    } else if (searchPrice >= finalPrice) {
       product.style.display = "block";
     } else {
       product.style.display = "none";
@@ -75,7 +75,7 @@ const SearchPriceHandlerWithEnter = (event) => {
       const finalPrice = productPrice.split(" ")[0];
       if (!searchPrice) {
         product.style.display = "block";
-      } else if (searchPrice > finalPrice) {
+      } else if (searchPrice >= finalPrice) {
         product.style.display = "block";
       } else {
         product.style.display = "none";
