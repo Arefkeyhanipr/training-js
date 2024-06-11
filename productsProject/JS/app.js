@@ -20,6 +20,18 @@ const searchHandeler = (event) => {
 
 const filterHandler = (event) => {
   const filter = event.target.dataset.filter;
+
+  products.forEach((product) => {
+    const category = product.dataset.category;
+
+    if (filter === "All") {
+      product.style.display = "block";
+    } else if (filter === category) {
+      product.style.display = "block";
+    } else {
+      product.style.display = "none";
+    }
+  });
 };
 
 //Add event listener
