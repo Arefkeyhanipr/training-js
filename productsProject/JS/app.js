@@ -4,6 +4,16 @@ const buttons = document.querySelectorAll(".filter-btn");
 
 //Functions
 
+const changeclass = (filter) => {
+  buttons.forEach((button) => {
+    if (button.dataset.filter === filter) {
+      button.classList.add("selected");
+    } else {
+      button.classList.remove("selected");
+    }
+  });
+};
+
 const searchHandeler = (event) => {
   const searchValue = event.target.value.toLowerCase().trim();
 
@@ -20,6 +30,7 @@ const searchHandeler = (event) => {
 
 const filterHandler = (event) => {
   const filter = event.target.dataset.filter;
+  changeclass(filter);
 
   products.forEach((product) => {
     const category = product.dataset.category;
