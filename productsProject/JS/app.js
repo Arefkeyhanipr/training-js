@@ -51,15 +51,36 @@ const filterHandler = (event) => {
 };
 
 const SearchPriceHandler = (event) => {
-  const searchPrice = priceInput.value;
+  const searchPrice = +priceInput.value;
 
-  console.log(searchPrice);
+  products.forEach((product) => {
+    const productPrice = product.children[2].innerText;
+    const finalPrice = productPrice.split(" ")[0];
+    if (!searchPrice) {
+      product.style.display = "block";
+    } else if (searchPrice > finalPrice) {
+      product.style.display = "block";
+    } else {
+      product.style.display = "none";
+    }
+  });
 };
 
 const SearchPriceHandlerWithEnter = (event) => {
   if (event.key === "Enter") {
-    const searchPrice = priceInput.value;
-    console.log(searchPrice);
+    const searchPrice = +priceInput.value;
+
+    products.forEach((product) => {
+      const productPrice = product.children[2].innerText;
+      const finalPrice = productPrice.split(" ")[0];
+      if (!searchPrice) {
+        product.style.display = "block";
+      } else if (searchPrice > finalPrice) {
+        product.style.display = "block";
+      } else {
+        product.style.display = "none";
+      }
+    });
   }
 };
 
