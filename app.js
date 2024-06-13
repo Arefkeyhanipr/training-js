@@ -1786,6 +1786,19 @@
 // =======================================================================================================================================
 //------------------------------------------------     Client-side storge     ------------------------------------------------
 
-//Local storge - persistent - 5MB - Origin
+//----------------------- Local storge - persistent - 5MB - Origin -------------------------
 
-localStorage.setItem("Name", "Aref");
+// localStorage.setItem("Name", "Aref");
+
+//----------------------- JSON stringify -------------------------
+
+//for using objects and other things in setItem we use JSON stringify cause it only accepts stings,like the code below
+
+// const data = { name: "aref", age: 23 };
+// const stringData = JSON.stringify(data);
+
+// localStorage.setItem("Name", "Aref");
+
+// localStorage.setItem("data", stringData);
+
+//as you can see now in the application,storage,local storage part the key is data but the value is an object
