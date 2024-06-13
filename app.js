@@ -1847,3 +1847,24 @@
 // const data = { name: "Aref", age: 23 };
 // const stringData = JSON.stringify(data);
 // sessionStorage.setItem("data", stringData);
+
+// =======================================================================================================================================
+
+//----------------------- Cookies  -------------------------
+
+// //Cookies - Persistent - 80KB
+
+// //a simple way to say what is cookies is when you get to site and sign in and login if you refresh the page your still logged in
+// //why is that? cause your information is saved in your cookies
+// //we use cookies for other things too
+// //you can find the cookies in the application,storage,cookise
+
+// document.cookie = "name=Aref";
+// document.cookie = "age=27";
+
+// //we have something named path. simple wat to say this is that we allow the user to have access in the all parts of the site
+// // and we have somthing like max-age, like when you login to a site but after 1 week your loged out,thats what max-age does
+
+// //in the code below the cookie will disappeare in 10 secounds if we comment it
+// document.cookie = "name2=Arash; path=/; max-age=10";
+// //max-age defualt is per secound
