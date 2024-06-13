@@ -1786,6 +1786,7 @@
 // =======================================================================================================================================
 //------------------------------------------------     Client-side storge     ------------------------------------------------
 
+// =======================================================================================================================================
 //----------------------- Local storge - persistent - 5MB - Origin -------------------------
 
 // localStorage.setItem("Name", "Aref");
@@ -1833,3 +1834,16 @@
 // //but if we want to just remove one of the items we use-->
 // //Remember you need to give the key of the item not the value
 // localStorage.removeItem("data");
+
+// =======================================================================================================================================
+
+//----------------------- Session Storage  -------------------------
+
+// //same as local storage with few diffrences
+// //if we clode the tab and reopen it again all the things are saved but
+// //in the session storage it will be all gone
+// //all the other things are the same such as clear,getItem,setItem & etc
+
+// const data = { name: "Aref", age: 23 };
+// const stringData = JSON.stringify(data);
+// sessionStorage.setItem("data", stringData);
