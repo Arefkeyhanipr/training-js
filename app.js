@@ -1792,7 +1792,7 @@
 
 //----------------------- JSON stringify -------------------------
 
-//for using objects and other things in setItem we use JSON stringify cause it only accepts stings,like the code below
+////for using objects and other things in setItem we use JSON stringify cause it only accepts stings,like the code below
 
 // const data = { name: "aref", age: 23 };
 // const stringData = JSON.stringify(data);
@@ -1801,4 +1801,35 @@
 
 // localStorage.setItem("data", stringData);
 
-//as you can see now in the application,storage,local storage part the key is data but the value is an object
+////as you can see now in the application,storage,local storage part the key is data but the value is an object
+
+//----------------------- JSON parse,getItem,changing and clear the data -------------------------
+
+// const data = { name: "Aref", age: 23 };
+// const stringData = JSON.stringify(data);
+// localStorage.setItem("data", stringData);
+// //With getItem we can get the value of the key
+// const getData = localStorage.getItem("data");
+
+// console.log(getData);
+
+// //now if we want to make the sting to the original shape we use parse
+// //like the code below
+
+// const parsedData = JSON.parse(getData);
+
+// console.log(parsedData);
+
+// //we can change the value of the key like code below
+
+// localStorage.setItem("lastName", "Keyhani");
+// localStorage.setItem("lastName", "Keyani Pirdehi");
+// //now the first setItem will change to the secound
+
+// //we can clear and delete everything from the local storage with-->
+
+// localStorage.clear();
+
+// //but if we want to just remove one of the items we use-->
+// //Remember you need to give the key of the item not the value
+// localStorage.removeItem("data");
