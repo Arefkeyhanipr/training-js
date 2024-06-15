@@ -1,8 +1,22 @@
 const taskInput = document.getElementById("task-input");
 const dateInput = document.getElementById("date-input");
 const addBtn = document.getElementById("add-btn");
+const alertMessage = document.getElementById("alert-message");
 
 const todos = [];
+
+const showAlert = (message, type) => {
+  alertMessage.innerHTML = "";
+  const alert = document.createElement("p");
+  alert.innerText = message;
+  alert.classList.add("alert");
+  alert.classList.add(`alert-${type}`);
+  alertMessage.append(alert);
+
+  setTimeout(() => {
+    alert.style.display = "none";
+  }, 3000);
+};
 
 const addHandler = () => {
   const task = taskInput.value;
@@ -16,15 +30,10 @@ const addHandler = () => {
     todos.push(todo);
     taskInput.value = "";
     dateInput.value = "";
+    showAlert("Todo added successfully! :)");
   } else {
-    alert(`* Warning * you didnt add anything to your Todo List!
-  please add something you want to do.`);
+    showAlert("Please enter a todo !", "error");
   }
 };
 
 addBtn.addEventListener("click", addHandler);
-
-console.log(taskInput);
-console.log(dateInput);
-console.log(addBtn);
-console.log(todos);
