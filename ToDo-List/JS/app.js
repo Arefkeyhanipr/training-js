@@ -48,7 +48,7 @@ const displayTodos = () => {
     </tr>`;
   });
 };
-
+displayTodos();
 const saveToLocalStorage = () => {
   localStorage.setItem("todos", JSON.stringify(todos));
 };
