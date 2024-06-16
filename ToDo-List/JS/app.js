@@ -112,6 +112,21 @@ const editHandler = (id) => {
   dateInput.value = todo.date;
   addBtn.style.display = "none";
   editBtn.style.display = "inline-block";
+  editBtn.dataset.id = id;
+};
+
+const applyEditHandler = (event) => {
+  const id = event.target.dataset.id;
+  const todo = todos.find((todo) => todo.id === +id);
+  todo.task = taskInput.value;
+  todo.date = dateInput.value;
+  taskInput.value = "";
+  dateInput.value = "";
+  addBtn.style.display = "inline-block";
+  editBtn.style.display = "none";
+  saveToLocalStorage();
+  displayTodos();
+  showAlert(`Todo edited successfully`, `success`);
 };
 
 //Event listeners
@@ -119,3 +134,4 @@ const editHandler = (id) => {
 window.addEventListener("load", displayTodos);
 addBtn.addEventListener("click", addHandler);
 deleteAllBtn.addEventListener("click", deleteAllHandler);
+editBtn.addEventListener("click", applyEditHandler);
