@@ -3,8 +3,9 @@ const dateInput = document.getElementById("date-input");
 const addBtn = document.getElementById("add-btn");
 const alertMessage = document.getElementById("alert-message");
 const todosBody = document.querySelector("tbody");
+const deleteAllBtn = document.getElementById("delete-all-btn");
 
-const todos = JSON.parse(localStorage.getItem("todos")) || [];
+let todos = JSON.parse(localStorage.getItem("todos")) || [];
 
 //Functions
 
@@ -48,7 +49,7 @@ const displayTodos = () => {
     </tr>`;
   });
 };
-displayTodos();
+
 const saveToLocalStorage = () => {
   localStorage.setItem("todos", JSON.stringify(todos));
 };
@@ -74,6 +75,19 @@ const addHandler = () => {
   }
 };
 
+const deleteAllHandler = () => {
+  if (todos.length) {
+    todos = [];
+    saveToLocalStorage();
+    displayTodos();
+    showAlert(`All Todos have been deleted successfully`, "success");
+  } else {
+    showAlert(`You dont have any Todos to clear at the momment!`, "error");
+  }
+};
+
 //Event listeners
 
+window.addEventListener("load", displayTodos);
 addBtn.addEventListener("click", addHandler);
+deleteAllBtn.addEventListener("click", deleteAllHandler);
