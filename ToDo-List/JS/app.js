@@ -5,7 +5,7 @@ const editBtn = document.getElementById("edit-btn");
 const alertMessage = document.getElementById("alert-message");
 const todosBody = document.querySelector("tbody");
 const deleteAllBtn = document.getElementById("delete-all-btn");
-
+const filterBtns = document.querySelectorAll(".filter-todos");
 let todos = JSON.parse(localStorage.getItem("todos")) || [];
 
 //Functions
@@ -29,14 +29,16 @@ const showAlert = (message, type) => {
   }, 3000);
 };
 
-const displayTodos = () => {
+const displayTodos = (data) => {
+  const todoList = data || todos;
   todosBody.innerHTML = "";
-  if (!todos.length) {
+
+  if (!todoList.length) {
     todosBody.innerHTML = `<tr><td colspan="4"> No task found!</td></tr>`;
     return;
   }
 
-  todos.forEach((todo) => {
+  todoList.forEach((todo) => {
     todosBody.innerHTML += `<tr>
     <td>${todo.task}</td>
     <td>${todo.date || "No Date Set"}</td>
@@ -129,9 +131,34 @@ const applyEditHandler = (event) => {
   showAlert(`Todo edited successfully`, `success`);
 };
 
+const filterHandler = (event) => {
+  let filteredTodos = null;
+  const filter = event.target.dataset.filter;
+  switch (filter) {
+    case "Pending":
+      filteredTodos = todos.filter((todo) => todo.completed === false);
+      break;
+
+    case "Completed":
+      filteredTodos = todos.filter((todo) => todo.completed === true);
+      break;
+    default:
+      filteredTodos = todos;
+      break;
+  }
+  displayTodos(filteredTodos);
+};
+
 //Event listeners
 
-window.addEventListener("load", displayTodos);
+window.addEventListener("load", () => displayTodos());
+
 addBtn.addEventListener("click", addHandler);
+
 deleteAllBtn.addEventListener("click", deleteAllHandler);
+
 editBtn.addEventListener("click", applyEditHandler);
+
+filterBtns.forEach((button) => {
+  button.addEventListener("click", filterHandler);
+});
