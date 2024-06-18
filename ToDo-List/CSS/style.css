@@ -101,6 +101,7 @@ button:hover {
 
 table {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 thead {
@@ -123,6 +124,7 @@ tbody td {
   background-color: var(--color-task);
   padding: 5px 10px;
   text-align: center;
+  width: 25px;
 }
 
 tbody td button:nth-child(1) {
