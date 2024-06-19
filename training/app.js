@@ -1893,3 +1893,30 @@
 // };
 
 // dublicate(5, add);
+
+//----------------------- callBack HELL!  -------------------------
+
+// function dublicate(number, callback1, callback2) {
+//   setTimeout(() => {
+//     const result = number * 2;
+//     console.log("The main", result);
+//     callback1(result, callback2);
+//   }, 2000);
+// }
+
+// const add = (number, callback) => {
+//   const res = number + 5;
+//   console.log("first callback", res);
+//   callback(res);
+// };
+
+// const makeItString = (num) => {
+//   console.log("secound callBack", num.toString());
+// };
+
+// dublicate(5, add, makeItString);
+
+// //okay as you can see this looks like HELL! for giving the parameter to another function in here
+// //we made another callback in dublicate then made a parameter callback in add and used another callback in add for send it to makeItString
+// //we did all of this just to give the parameter to another function and made this mess
+// //this is one of the reasons we regularly don't use the callback cause it will make a CALLBACK HELL!
