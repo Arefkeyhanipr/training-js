@@ -1920,3 +1920,17 @@
 // //we made another callback in dublicate then made a parameter callback in add and used another callback in add for send it to makeItString
 // //we did all of this just to give the parameter to another function and made this mess
 // //this is one of the reasons we regularly don't use the callback cause it will make a CALLBACK HELL!
+
+//
+//----------------------- Promise -------------------------
+//we use Promise so we dont use the callback, they are similar to eachother,both trying to make Asynchono, but promise doesnt have the problems like callback hell
+
+// const data = new Promise(function (resolve, reject) {
+//   setTimeout(() => {
+//     console.log(`1`);
+//     resolve();
+//     //resolve in here is something similar to return and it means the job is done here
+//   }, 2000);
+// });
+
+// data.then(() => console.log(`2`));
