@@ -12,3 +12,14 @@ greeting();
 import city from "./app.js";
 
 console.log(city);
+
+//--------------- Getting all module at once ***************
+
+// so what if we want to get all of the export using the first way(Named) at once? we will do it like the code below using a star
+
+import * as everything from "./app.js";
+
+console.log(everything);
+console.log(everything.age);
+console.log(everything.name);
+everything.greeting();
