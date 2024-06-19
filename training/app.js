@@ -1868,3 +1868,28 @@
 // //in the code below the cookie will disappeare in 10 secounds if we comment it
 // document.cookie = "name2=Arash; path=/; max-age=10";
 // //max-age defualt is per secound
+
+// =======================================================================================================================================
+// =======================================================================================================================================
+// =======================================================================================================================================
+//------------------------------------------------     Asynchono     ------------------------------------------------
+
+//----------------------- Call Back  -------------------------
+
+// //here we have two functions and the first function will run after 2 secounds
+// //what if we want to use the parameter of the first function for the secound one?
+// //we can use callBack in this situation like the code below
+
+// function dublicate(number, callBack) {
+//   setTimeout(() => {
+//     const result = number * 2;
+//     console.log(result);
+//     callBack(result);
+//   }, 2000);
+// }
+
+// const add = (number) => {
+//   console.log(number + 5);
+// };
+
+// dublicate(5, add);
