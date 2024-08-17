@@ -1934,3 +1934,29 @@
 // });
 
 // data.then(() => console.log(`2`));
+
+//----------------------- resolve & reject -------------------------
+
+////as you can see here we are asking for users password
+////it will check it and then put the result in alert and in console
+
+// const password = "thisIsPassword";
+
+// const getPassword = prompt(`please enter your password`);
+
+// const data = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (password === getPassword) {
+//       resolve();
+//     } else {
+//       reject();
+//     }
+//   }, 2000);
+// });
+// if (password === getPassword) {
+//   data.then(() => alert(`Welcome to your panel`));
+//   data.then(() => console.log(`%cWelcome to your panel`, "color:green;"));
+// } else {
+//   data.catch(() => alert(`The password was wrong`));
+//   data.catch(() => console.error(`The password was wrong`));
+// }
