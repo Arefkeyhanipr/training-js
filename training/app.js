@@ -1960,3 +1960,24 @@
 //   data.catch(() => alert(`The password was wrong`));
 //   data.catch(() => console.error(`The password was wrong`));
 // }
+
+//----------------------- then & catch -------------------------
+// //we can use then and catch like this to get the massages from resove and reject and send it
+// const password = "thisIsPassword";
+
+// const getPassword = prompt(`please enter your password`);
+// const name = prompt(`enter your name`);
+
+// const data = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (password === getPassword) {
+//       resolve(`Welcome to your panel `);
+//     } else {
+//       reject(`password was wrong`);
+//     }
+//   }, 2000);
+// });
+
+// data
+//   .then((result) => console.log(result + name))
+//   .catch((error) => console.error(error));
