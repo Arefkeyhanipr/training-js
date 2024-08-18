@@ -1981,3 +1981,29 @@
 // data
 //   .then((result) => console.log(result + name))
 //   .catch((error) => console.error(error));
+
+//----------------------- solve the callback hell problem with promise -------------------------
+
+// const dublicate = (number) => {
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const result = number * 2;
+//       resolve(result);
+//     }, 1000);
+//   });
+//   return promise;
+// };
+
+// const add = (number) => {
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const result = number + 5;
+//       resolve(result);
+//     }, 1000);
+//   });
+//   return promise;
+// };
+
+// dublicate(5)
+//   .then((number) => add(number))
+//   .then((finalNum) => console.log(finalNum));
