@@ -2040,3 +2040,51 @@
 //   console.log(`End`);
 // }
 // start();
+
+//----------------------- Error handeling in async & await  -------------------------
+//// as you remember in then and catch when we got an error the catch handels it,but what about async? lets get to iy
+
+////ill put an error in the code, first ill change the line 2052 and put and if else in it and then change the input of dublicate from 5 to null
+////so we get an error
+////so about the handeling, we can handel this problem with try and catch
+
+// const dublicate = (number) => {
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (typeof number === "number") {
+//         const result = number * 2;
+//         resolve(result);
+//       } else {
+//         reject("invalid data type");
+//       }
+//     }, 1000);
+//   });
+//   return promise;
+// };
+
+// const add = (number) => {
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const result = number + 5;
+//       resolve(result);
+//     }, 1000);
+//   });
+//   return promise;
+// };
+
+// async function start() {
+//   console.log(`start`);
+//   try {
+//     //as you can see the error is here, the dublicate needs a number but we are giving it an null
+//     const resultOfDb = await dublicate(null);
+//     console.log(resultOfDb);
+//     const resultOfAdd = await add(2);
+//     console.log(resultOfAdd);
+//   } catch (error) {
+//     //this will show us that we have an error
+//     console.error(error);
+//   }
+
+//   console.log(`End`);
+// }
+// start();
