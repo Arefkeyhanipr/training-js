@@ -2007,3 +2007,36 @@
 // dublicate(5)
 //   .then((number) => add(number))
 //   .then((finalNum) => console.log(finalNum));
+
+//----------------------- async & await - ES8 -------------------------
+////we can only use async in functions
+
+// const dublicate = (number) => {
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const result = number * 2;
+//       resolve(result);
+//     }, 1000);
+//   });
+//   return promise;
+// };
+
+// const add = (number) => {
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const result = number + 5;
+//       resolve(result);
+//     }, 1000);
+//   });
+//   return promise;
+// };
+
+// async function start() {
+//   console.log(`start`);
+//   const resultOfDb = await dublicate(5);
+//   console.log(resultOfDb);
+//   const resultOfAdd = await add(2);
+//   console.log(resultOfAdd);
+//   console.log(`End`);
+// }
+// start();
