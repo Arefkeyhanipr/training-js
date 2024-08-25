@@ -2131,3 +2131,53 @@
 // }
 
 // getData();
+
+//----------------------- GET & POST  -------------------------
+
+// const url = "https://jsonplaceholder.typicode.com/posts";
+
+// //Defualt in fetch is "GET",remember this
+// //GET
+// //get is the way to get the data from the server
+// fetch(url, { method: "GET" })
+//   .then((res) => res.json())
+//   .then((res) => console.log(res))
+//   .catch((error) => console.error(error));
+
+// //POST
+// //post is the way to send the data to the server
+// fetch(url, {
+//   method: "POST",
+//   body: JSON.stringify({
+//     title: "JS training",
+//     body: "This is a training of JS",
+//     userId: "5000",
+//   }),
+//   headers: {
+//     "content-type": "application/json",
+//   },
+// })
+//   .then((res) => res.json())
+//   .then((res) => console.log(res))
+//   .catch((error) => console.error(error));
+
+// //or we can write the post like this so its more clear and clean coded
+
+// const data = {
+//   title: "JS training",
+//   body: "This is a training of JS",
+//   userId: "5000",
+// };
+
+// const head = {
+//   "content-type": "application/json",
+// };
+
+// fetch(url, {
+//   method: "POST",
+//   body: JSON.stringify(data),
+//   headers: head,
+// })
+//   .then((res) => res.json())
+//   .then((res) => console.log(res))
+//   .catch((error) => console.error(error));
