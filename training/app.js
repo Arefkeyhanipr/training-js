@@ -2112,3 +2112,22 @@
 
 // //here we send our request to the server
 // xhr.send();
+
+//----------------------- fetch  -------------------------
+// //fetch is easier way to get the data from the server like the code below:
+// //this is fetch using promise:
+
+// fetch("https://jsonplaceholder.typicode.com/posts")
+//   .then((res) => res.json())
+//   .then((res) => console.log(res))
+//   .catch((error) => console.error(error));
+
+// //we can use fetch with async too like the code below:
+
+// async function getData() {
+//   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+//   const data = await res.json();
+//   console.log(data);
+// }
+
+// getData();
