@@ -2181,3 +2181,55 @@
 //   .then((res) => res.json())
 //   .then((res) => console.log(res))
 //   .catch((error) => console.error(error));
+
+//----------------------- PUT & PATCH  -------------------------
+
+//put and patch are for updating data
+
+//--- PUT ---
+//put will delete the data and replace it with what we want like the code below
+
+// const data = {
+//   title: "JS training",
+//   body: "This is a training of JS",
+//   userId: "5000",
+// };
+
+// const head = {
+//   "content-type": "application/json",
+// };
+
+// fetch("https://jsonplaceholder.typicode.com/posts/1", {
+//   method: "PUT",
+//   body: JSON.stringify(data),
+//   headers: head,
+// })
+//   .then((res) => res.json())
+//   .then((res) => console.log(res))
+//   .catch((error) => console.error(error));
+
+// //the original out come of "https://jsonplaceholder.typicode.com/posts/1" is  {
+// // "userId": 1,
+// // "id": 1,
+// // "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+// // "body": "quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto"
+// // }
+// //but we changed it to data that we want
+
+// //---  PATCH  ---
+// //PATCH is for changin things in the data and it will not delete all of the data and it will only change the data that you need ;ike the code below
+
+// //here the original title is "sunt aut facere repellat provident occaecati excepturi optio reprehenderit" but we change it to "hello"
+
+// fetch("https://jsonplaceholder.typicode.com/posts/1", {
+//   method: "PATCH",
+//   body: JSON.stringify({
+//     title: "hello",
+//   }),
+//   headers: {
+//     "content-type": "application/json; charset=UTF-8",
+//   },
+// })
+//   .then((res) => res.json())
+//   .then((res) => console.log(res))
+//   .catch((error) => console.error(error));
