@@ -2233,3 +2233,15 @@
 //   .then((res) => res.json())
 //   .then((res) => console.log(res))
 //   .catch((error) => console.error(error));
+
+//----------------------- Delete  -------------------------
+// //Delete is used for deleting a data
+
+// fetch("https://jsonplaceholder.typicode.com/posts/1", {
+//   method: "DELETE",
+// })
+//   .then((res) => res.json())
+//   .then((res) => console.log(res))
+//   .catch((error) => console.error(error));
+
+// //As you can see we have a empty object in the log and everything inside of it is deleted
