@@ -2256,36 +2256,58 @@
 
 //----------------------- for review  -------------------------
 
-for (let i = 0; i < 20; i++) {
-  console.log(i);
-}
+// for (let i = 0; i < 20; i++) {
+//   console.log(i);
+// }
 
-const num = ["one", "two", "three", "four", "five"];
+// const num = ["one", "two", "three", "four", "five"];
 
-for (let i = 0; i < num.length; i++) {
-  console.log(`Length number ${i} and the number is ${num[i]}`);
-}
+// for (let i = 0; i < num.length; i++) {
+//   console.log(`Length number ${i} and the number is ${num[i]}`);
+// }
 
-//for of & for in review
+// //for of & for in review
 
-for (let nums of num) {
-  console.log(`We got number ${nums} with for of`);
-}
+// for (let nums of num) {
+//   console.log(`We got number ${nums} with for of`);
+// }
 
-const user = {
-  name: "aref",
-  age: 23,
-  job: "programmer",
-};
+// const user = {
+//   name: "aref",
+//   age: 23,
+//   job: "programmer",
+// };
 
-for (data in user) {
-  console.log(
-    `This is information of the user,The ${data} is ${user[data]}, it was an object so we got it with for in`
-  );
-}
+// for (data in user) {
+//   console.log(
+//     `This is information of the user,The ${data} is ${user[data]}, it was an object so we got it with for in`
+//   );
+// }
 
-//foreach review
+// //foreach review
 
-num.forEach(function (nums, index) {
-  console.log(`We got ${nums} in the index of ${index} using foreach`);
-});
+// num.forEach(function (nums, index) {
+//   console.log(`We got ${nums} in the index of ${index} using foreach`);
+// });
+
+//----------------------- DOM review  -------------------------
+
+//---simple DOM change review ---
+document.title = "We are Training  JS";
+
+const text = document.getElementById("text");
+
+text.style.color = "rgb(80, 90, 70)";
+text.style.fontSize = "30px";
+console.log(text);
+
+const mainText = document.querySelector("#main p");
+
+mainText.style.color = "darkBlue";
+console.log(mainText);
+
+const mainHeader = document.querySelector("#main h1");
+
+mainHeader.style.color = "white";
+
+mainHeader.style.textTransform = "upperCase";
