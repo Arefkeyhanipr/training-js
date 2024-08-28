@@ -2265,3 +2265,21 @@ const num = ["one", "two", "three", "four", "five"];
 for (let i = 0; i < num.length; i++) {
   console.log(`Length number ${i} and the number is ${num[i]}`);
 }
+
+//for of & for in review
+
+for (let nums of num) {
+  console.log(`We got number ${nums} with for of`);
+}
+
+const user = {
+  name: "aref",
+  age: 23,
+  job: "programmer",
+};
+
+for (data in user) {
+  console.log(
+    `This is information of the user,The ${data} is ${user[data]}, it was an object so we got it with for in`
+  );
+}
