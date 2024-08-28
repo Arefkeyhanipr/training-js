@@ -2292,35 +2292,66 @@
 
 //----------------------- DOM review  -------------------------
 
-//---simple DOM change review---
-document.title = "We are Training  JS";
+// //---simple DOM change review---
+// document.title = "We are Training  JS";
 
-const text = document.getElementById("text");
+// const text = document.getElementById("text");
 
-text.style.color = "rgb(80, 90, 70)";
-text.style.fontSize = "30px";
-console.log(text);
+// text.style.color = "rgb(80, 90, 70)";
+// text.style.fontSize = "30px";
+// console.log(text);
 
-const mainText = document.querySelector("#main p");
+// const mainText = document.querySelector("#main p");
 
-mainText.style.color = "white";
-console.log(mainText);
+// mainText.style.color = "white";
+// console.log(mainText);
 
-const mainHeader = document.querySelector("#main h1");
+// const mainHeader = document.querySelector("#main h1");
 
-// mainHeader.style.color = "white";
+// // mainHeader.style.color = "white";
 
-mainHeader.style.textTransform = "upperCase";
+// mainHeader.style.textTransform = "upperCase";
 
-//---addevent listener review---
+// //---addevent listener review---
 
-const btn = document.querySelector(".btn");
-const mainDiv = document.querySelector("#main");
-btn.addEventListener("click", changeColor);
+// const btn = document.querySelector(".btn");
+// const mainDiv = document.querySelector("#main");
+// btn.addEventListener("click", changeColor);
 
-function changeColor() {
-  mainDiv.classList.toggle("changeBackground");
-  mainHeader.classList.toggle("spin");
-}
+// function changeColor() {
+//   mainDiv.classList.toggle("changeBackground");
+//   mainHeader.classList.toggle("spin");
+// }
 
-console.log(mainHeader);
+// console.log(mainHeader);
+
+//----------------------- LocalStorage review  -------------------------
+
+// localStorage.setItem("todo", "go to basketball");
+
+// const whatWeDo = localStorage.getItem("todo");
+
+// console.log(whatWeDo);
+
+// localStorage.clear();
+
+// const todoList = ["basketball", "programming", "shower"];
+// const jsonTodoList = JSON.stringify(todoList);
+
+// localStorage.setItem("todos", jsonTodoList);
+
+// const retrieved = JSON.parse(localStorage.getItem("todos"));
+
+// console.log(retrieved);
+
+// const todoObj = {
+//   todo1: "basketball",
+//   todo2: "shower",
+//   todo3: "programming",
+// };
+
+// localStorage.setItem("todo2", JSON.stringify(todoObj));
+
+// const retrievedObj = JSON.parse(localStorage.getItem("todo2"));
+
+// console.log(retrievedObj);
