@@ -2292,7 +2292,7 @@
 
 //----------------------- DOM review  -------------------------
 
-//---simple DOM change review ---
+//---simple DOM change review---
 document.title = "We are Training  JS";
 
 const text = document.getElementById("text");
@@ -2303,11 +2303,24 @@ console.log(text);
 
 const mainText = document.querySelector("#main p");
 
-mainText.style.color = "darkBlue";
+mainText.style.color = "white";
 console.log(mainText);
 
 const mainHeader = document.querySelector("#main h1");
 
-mainHeader.style.color = "white";
+// mainHeader.style.color = "white";
 
 mainHeader.style.textTransform = "upperCase";
+
+//---addevent listener review---
+
+const btn = document.querySelector(".btn");
+const mainDiv = document.querySelector("#main");
+btn.addEventListener("click", changeColor);
+
+function changeColor() {
+  mainDiv.classList.toggle("changeBackground");
+  mainHeader.classList.toggle("spin");
+}
+
+console.log(mainHeader);

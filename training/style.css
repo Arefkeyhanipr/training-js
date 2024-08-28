@@ -1,12 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #32353f;
+}
 .imMain {
   font-size: 20px;
-  color: rgb(113, 4, 4);
-  background-color: rgb(85, 83, 83);
+  color: rgb(65, 192, 238);
+  background-color: rgb(83, 84, 85);
+  padding: 5px 0 20px 10px;
 }
 
-.container2 {
+/* .container2 {
   font-size: 25px;
   color: rgb(3, 100, 37);
   background-color: rgba(4, 4, 4, 0.913);
   transition: 1s;
+} */
+
+.changeBackground {
+  background-color: rgb(74, 48, 84);
+}
+
+#who {
+  transition: all 0.5s ease;
+}
+
+.spin {
+  color: black;
+  font-size: 50px;
+  transform: rotateX(360deg);
 }
