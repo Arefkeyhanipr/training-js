@@ -2283,3 +2283,9 @@ for (data in user) {
     `This is information of the user,The ${data} is ${user[data]}, it was an object so we got it with for in`
   );
 }
+
+//foreach review
+
+num.forEach(function (nums, index) {
+  console.log(`We got ${nums} in the index of ${index} using foreach`);
+});
