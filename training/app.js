@@ -2355,3 +2355,89 @@
 // const retrievedObj = JSON.parse(localStorage.getItem("todo2"));
 
 // console.log(retrievedObj);
+
+//----------------------- diffrence between query selector and get element(or better to say nodeList and collection)  -------------------------
+// //this is an nodeList
+// // const itemList = document.querySelector("#item-list");
+// // const item = document.querySelectorAll(".item");
+// // const counterItem = document.querySelector("#counter");
+
+// // console.log(itemList);
+// // console.log(item);
+
+// //and this is an HTML collection
+// const itemList1 = document.getElementById("item-list");
+// const item1 = document.getElementsByClassName("item");
+
+// // console.log(itemList1);
+// // console.log(item1);
+
+// //they are both getting the same items but have a little bit of diffrences that we are going to look at
+// //first of all we cant use forEach on the HTMLcollection it will give us an error but we can use it in nodelist
+
+// ////nodeList forEach works fine
+
+// // item.forEach((item) => {
+// //   console.log(item);
+// // });
+
+// ////But HTML collection forEach gives error as you can see
+// // item1.forEach((item) => {
+// //   console.log(item);
+// // });
+
+// ////but we can use for loop on both of them
+
+// // //nodelist works fine with for loop
+// // for (items of item) {
+// //   console.log(items);
+// // }
+// // //HTML collection works fine with for loop
+// // for (items of item1) {
+// //   console.log(items);
+// // }
+
+// //so lets get to another diffrence
+// //HTML collection will update it self but the nodelist will not to it by it self
+// //let me show you what i mean
+
+// //here i want to add another li to the list and as we can see the h2 is showing us how many li's we have
+
+// ////HTML collection
+
+// // const newItem1 = document.createElement("li");
+// // newItem1.classList.add("item");
+// // newItem1.innerHTML = "item3";
+
+// // itemList1.appendChild(newItem1);
+
+// // counterItem.innerHTML = item1.length;
+
+// ////as you can see the HTML collection will update the length by it self
+// ////lets see how nodelist works
+
+// ////Node list
+// // const newItem = document.createElement("li");
+// // newItem.classList.add("item");
+// // newItem.innerHTML = "item3";
+
+// // itemList.appendChild(newItem);
+
+// // counterItem.innerHTML = item.length;
+
+// ////as you can see here the nodelist will add the new item to the list but doesnt update the length
+// ////so how can we solve this problem?
+
+// const itemList = document.querySelector("#item-list");
+// const item = itemList.children;
+// const counterItem = document.querySelector("#counter");
+
+// const newItem = document.createElement("li");
+// newItem.classList.add("item");
+// newItem.innerHTML = `item ${item.length + 1}`;
+
+// itemList.appendChild(newItem);
+
+// counterItem.innerHTML = item.length;
+
+// //if we change the item from queryselectorAll and use the children method instead,the problem will be solved as you can see
