@@ -39,7 +39,12 @@ function deleteCheck(e) {
   itemParent = item.parentElement;
   //Delete todo
   if (item.classList[0] === "trash-btn") {
-    itemParent.remove();
+    //Animation
+    itemParent.classList.add("fall");
+    itemParent.addEventListener("transitionend", function () {
+      //Remove todo
+      itemParent.remove();
+    });
   }
   //Check Mark
   if (item.classList[0] === "complete-btn") {

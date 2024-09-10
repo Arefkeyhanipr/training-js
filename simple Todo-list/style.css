@@ -108,3 +108,15 @@ form button:hover {
 .fa-check {
   pointer-events: none;
 }
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg) rotateX(360deg);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
