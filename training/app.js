@@ -2454,3 +2454,16 @@
 
 // console.log(eachName);
 // console.log(eachNameAf);
+
+//----------------------- find review  -------------------------
+
+// //only returns one result
+
+// const numbers = ["1", "2", "3", "11", "5", "7", "63", "123", "63", "87", "54"];
+
+// const aref = ["aref", "arefe", "arash"];
+// const searchNum = numbers.find((num) => {
+//   return num.includes(11);
+// });
+
+// console.log(searchNum);
