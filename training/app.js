@@ -2496,3 +2496,19 @@
 // });
 
 // console.log(allAreBigger);
+
+//----------------------- Turnary operator review  -------------------------
+
+// const numbers = ["1", "2", "3", "11", "5", "7", "63", "123", "63", "87", "54"];
+
+// const biggerThenFive = numbers.map((num) => {
+//   if (num > 5) {
+//     console.log(`im bigger`);
+//   } else {
+//     console.log(`nope im tiny`);
+//   }
+// });
+
+// const biggerThenFive1 = numbers.map((num) => {
+//   return num > 5 ? console.log("im so bigger") : console.log(`im so tiny`);
+// });
