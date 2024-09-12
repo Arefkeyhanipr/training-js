@@ -2441,3 +2441,16 @@
 // counterItem.innerHTML = item.length;
 
 // //if we change the item from queryselectorAll and use the children method instead,the problem will be solved as you can see
+
+//----------------------- map review  -------------------------
+
+// const names = ["aref", "Arash", "omid", "kasra"];
+// //map with regular function
+// const eachName = names.map((name) => {
+//   return name;
+// });
+// //map with arrow function
+// const eachNameAf = names.map((name) => name.toUpperCase());
+
+// console.log(eachName);
+// console.log(eachNameAf);
