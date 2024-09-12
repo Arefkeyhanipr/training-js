@@ -2480,3 +2480,19 @@
 // });
 
 // console.log(searchNum);
+
+//----------------------- some & every review  -------------------------
+
+// const numbers = ["1", "2", "3", "11", "5", "7", "63", "123", "63", "87", "54"];
+
+// const someAreBigger = numbers.some((num) => {
+//   return num > 5;
+// });
+
+// console.log(someAreBigger);
+
+// const allAreBigger = numbers.every((num) => {
+//   return num > 5;
+// });
+
+// console.log(allAreBigger);
