@@ -2467,3 +2467,16 @@
 // });
 
 // console.log(searchNum);
+
+//----------------------- Filter review  -------------------------
+
+// //returns all the numbers that have 1 in it
+
+// const numbers = ["1", "2", "3", "11", "5", "7", "63", "123", "63", "87", "54"];
+
+// const aref = ["aref", "arefe", "arash"];
+// const searchNum = numbers.filter((num) => {
+//   return num.includes(1);
+// });
+
+// console.log(searchNum);
