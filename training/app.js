@@ -2604,3 +2604,25 @@
 // };
 
 // user3.greeting();
+
+//----------------------- bind - call - aplly review  -------------------------
+
+// const user = {
+//   name: "Aref",
+//   lastName: "Keyhani",
+//   fullName() {
+//     console.log(`You are ${this.name} ${this.lastName}`);
+//   },
+// };
+
+// function registerUser(country, lan) {
+//   this.fullName();
+//   console.log(`Your country is ${country} and your language is ${lan}`);
+// }
+
+// const regestration = registerUser.bind(user);
+// regestration("Iran", "farsi");
+
+// registerUser.call(user, "iran", "farsi");
+
+// registerUser.apply(user, ["iran", "farsi"]);
