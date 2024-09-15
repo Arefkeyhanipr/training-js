@@ -2546,3 +2546,61 @@
 // //and after all of that, in the end we will have this log
 // //step 5
 // console.log(`we are done with this review`);
+
+//----------------------- this review  -------------------------
+
+// //the key word this is a pointer that refrens to an object
+
+// //this will refer to the window object
+// function sayHi() {
+//   console.log(this);
+// }
+// sayHi();
+
+// const user = {
+//   name: "aref",
+//   thisObject() {
+//     console.log(this);
+//   },
+//   whatName() {
+//     console.log(this.name);
+//   },
+// };
+
+// user.thisObject();
+// user.whatName();
+// //so why dont we say user.name here? think that we want to do a same thing on many users
+// //watch the code below so you can see how easy it will get with this
+
+// const user1 = {
+//   name: "aref",
+// };
+// const user2 = {
+//   name: "omid",
+// };
+
+// function makeBig() {
+//   console.log(this.name.toUpperCase());
+// }
+
+// user1.makeNameBig = makeBig;
+// user2.makeNameBig = makeBig;
+
+// user1.makeNameBig();
+// user2.makeNameBig();
+
+// const user3 = {
+//   name: "aref",
+//   skills: ["HTML", "Css", "JS"],
+//   greeting() {
+//     console.log(`welcome ${this.name}`);
+//     //if we use regular function we will not get the skills cause it will refer to greeting object
+//     //and there is no skills, so if we use arrow function it will not create a new space and it will refear to the user3
+//     const getSkills = () => {
+//       console.log(`aref knows how to work with ${this.skills}`);
+//     };
+//     getSkills();
+//   },
+// };
+
+// user3.greeting();
