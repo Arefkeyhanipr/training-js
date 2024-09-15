@@ -2512,3 +2512,37 @@
 // const biggerThenFive1 = numbers.map((num) => {
 //   return num > 5 ? console.log("im so bigger") : console.log(`im so tiny`);
 // });
+
+//----------------------- callStack review  -------------------------
+//so javascript read the codes line by line and im gonna show you how it will read the codes below
+
+// //here we have function but we didnt call it so it doesn't invoke at the time
+// function sayHi() {
+//   //step 2
+//   console.log(`hello ${name} welcome`);
+
+//   //here we invoke another function so we jump to that function
+//   changeName();
+
+//   //after changeName is done we will get back here and get the result of this log
+//   //step 4
+//   console.log(`say name is finished`);
+// }
+
+// function changeName() {
+//   //step 3
+//   name = "omid";
+//   console.log(`we changed the name to ${name}`);
+//   console.log(`changeName is finished`);
+// }
+
+// //the first thing that javascript will read is this codes is the -> name
+// //step 1
+// let name = "aref";
+
+// // here we invoke the sayhi function so it will go back up
+// sayHi();
+
+// //and after all of that, in the end we will have this log
+// //step 5
+// console.log(`we are done with this review`);
