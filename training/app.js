@@ -2645,3 +2645,23 @@
 
 // myTodoList.info();
 // myTodoList2.info();
+
+//----------------------- prototype review  -------------------------
+
+// function Todo(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+
+// Todo.prototype.info = function () {
+//   console.log(`${this.name} is ${this.age} years old`);
+// };
+
+// const myTodoList = new Todo("aref", 24);
+// const myTodoList2 = new Todo("omid", 36);
+
+// myTodoList.info();
+// myTodoList2.info();
+
+// console.log(myTodoList);
+// console.log(myTodoList2);
