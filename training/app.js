@@ -2665,3 +2665,58 @@
 
 // console.log(myTodoList);
 // console.log(myTodoList2);
+
+//----------------------- prototype Inheritence review  -------------------------
+
+// const Human = function (name, lastname, age, city) {
+//   this.name = name;
+//   this.lastname = lastname;
+//   this.age = age;
+//   this.city = city;
+// };
+
+// Human.prototype.fullName = function () {
+//   console.log(`hello ${this.name} ${this.lastname}`);
+// };
+
+// Human.prototype.livingIn = function () {
+//   console.log(`Your living at ${this.city}`);
+// };
+
+// Human.prototype.old = function () {
+//   console.log(`you are ${this.age} years old`);
+// };
+
+// function Alien(name, lastname, age, city, skinColor, eyes) {
+//   //Keyword this is going to reference the Alien object
+//   Human.call(this, name, lastname, age, city);
+//   //Define as normal
+//   this.skinColor = skinColor;
+//   this.eyes = eyes;
+// }
+
+// //Inherit prototype
+// Alien.prototype = Object.create(Human.prototype);
+
+// Alien.prototype.speciallity = function () {
+//   console.log(`Toxic Green Acid!`);
+// };
+
+// //Alien
+
+// const faja = new Alien("rez", "kojo", 638, "unknown location", "green", 3);
+
+// faja.fullName();
+// faja.livingIn();
+// faja.old();
+
+// faja.speciallity();
+
+// console.log(faja);
+
+// //Human
+// const mytodo = new Human("aref", "keyhani", 23, "tehran");
+
+// mytodo.fullName();
+// mytodo.livingIn();
+// mytodo.old();
