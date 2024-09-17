@@ -2626,3 +2626,22 @@
 // registerUser.call(user, "iran", "farsi");
 
 // registerUser.apply(user, ["iran", "farsi"]);
+
+//----------------------- constructor function review  -------------------------
+
+// function Todo(name, age, info) {
+//   this.name = name;
+//   this.age = age;
+//   this.info = () => {
+//     console.log(`${this.name} is ${this.age} years old`);
+//   };
+// }
+
+// const myTodoList = new Todo("aref", 24);
+// const myTodoList2 = new Todo("omid", 36);
+
+// console.log(myTodoList);
+// console.log(myTodoList2);
+
+// myTodoList.info();
+// myTodoList2.info();
