@@ -2720,3 +2720,41 @@
 // mytodo.fullName();
 // mytodo.livingIn();
 // mytodo.old();
+
+//----------------------- classes review  -------------------------
+
+// class Enemy {
+//   constructor(name, life, level) {
+//     this.name = name;
+//     this.life = life;
+//     this.level = level;
+//   }
+//   getInfo() {
+//     console.log(
+//       `name is ${this.name}, it has ${this.life} life points, and the level is ${this.level}`
+//     );
+//   }
+// }
+
+// const dragon = new Enemy("wozzy", 1000, 999);
+// const bug = new Enemy("biz", 5, 1);
+// const dog = new Enemy("pupz", 56, 86);
+
+// console.log(dragon);
+// console.log(bug);
+
+// dog.getInfo();
+
+// class Alian extends Enemy {
+//   constructor(name, life, level, color, reason) {
+//     super(name, life, level);
+//     this.color = color;
+//     this.reason = reason;
+//   }
+// }
+
+// const oneEye = new Alian("gurgu", 50000, 1400000, "Gray", "war and fight");
+
+// console.log(oneEye);
+
+// oneEye.getInfo();
